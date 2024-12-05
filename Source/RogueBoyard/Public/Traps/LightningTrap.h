@@ -26,16 +26,6 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Trap|LightningTrap")
 	float Speed;
 
-	FVector Movement;
-
-	FVector RightVector;
-	
-	FVector ForwardVector;
-	
-	FVector NewLocation;
-
-	FVector CurrentLocation;
-
 private:
 	void MoveOnXYDirection(float DeltaTime);
 };
