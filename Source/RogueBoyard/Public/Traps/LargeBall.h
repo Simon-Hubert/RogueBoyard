@@ -26,8 +26,14 @@ public:
 	
 	void HandleJoystickInput();
 
-	UPROPERTY(EditAnywhere)
-	float MoveSpeed = 5.0f;
+	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
+	float MoveSpeed = 500.0f;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	bool bArrived = true;
+	
+	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
+	float Tolerance = 5.0f;
 
 	UFUNCTION(BlueprintCallable)
 	void MoveTowardsTarget(float DeltaTime, FVector TargetLocation);
@@ -45,9 +51,12 @@ public:
 	UFUNCTION(BlueprintNativeEvent)
 	void JoystickMoveDown();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "LargeBall|Input")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Trap|LargeBall")
 	float InputThreshold = 0.5f;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "LargeBall")
-	UStaticMeshComponent* Ball; 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Trap|LargeBall")
+	UStaticMeshComponent* Ball;
+
+	UPROPERTY(BlueprintReadWrite)
+	FVector TargetPos;
 };

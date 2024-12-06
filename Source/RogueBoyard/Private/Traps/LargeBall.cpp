@@ -15,6 +15,7 @@ ALargeBall::ALargeBall()
 void ALargeBall::BeginPlay()
 {
 	Super::BeginPlay();
+	TargetPos = Ball->GetComponentLocation();
 }
 
 
@@ -24,23 +25,23 @@ void ALargeBall::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	HandleJoystickInput();
+	MoveTowardsTarget(DeltaTime,TargetPos);
 }
 
 void ALargeBall::MoveTowardsTarget(float DeltaTime, FVector TargetLocation)
 {
-	if (TargetLocation != FVector::ZeroVector)
+	FVector Direction = (TargetLocation - Ball->GetComponentLocation()).GetSafeNormal();
+	float Distance = (TargetLocation - Ball->GetComponentLocation()).Size();
+	if (Distance <= Tolerance)
 	{
-		FVector Direction = TargetLocation - GetActorLocation();
-		float Distance = Direction.Size();
-		if (Distance < 10.f)
-		{
-			SetActorLocation(TargetLocation); 
-			return;
-		}
-		Direction.Normalize();
-		GetComponents()->
-		FVector NewLocation = GetActorLocation() + (Direction * MoveSpeed * DeltaTime);
-		SetActorLocation(NewLocation);
+		Ball->SetWorldLocation(TargetLocation);
+		bArrived = true;
+	}
+	else
+	{
+		FVector Displacement = Direction * MoveSpeed * DeltaTime;
+		FVector NewPosition = Ball->GetComponentLocation() + Displacement;
+		Ball->SetWorldLocation(NewPosition);
 	}
 }
 
