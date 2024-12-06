@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "RogueTrap.h"
+#include "Characters/RogueCharacter.h"
 #include "Blackhole.generated.h"
 
 UCLASS()
@@ -22,4 +23,10 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable)
+	void AttractPlayers(float Attraction, ARogueCharacter* Player);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float AttractionForce;
 };
