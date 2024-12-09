@@ -27,6 +27,9 @@ public:
 	void HandleJoystickInput();
 
 	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
+	float TimeBetweenEachMove;
+
+	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
 	float MoveSpeed = 500.0f;
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)

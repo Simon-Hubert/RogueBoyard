@@ -35,6 +35,7 @@ void ALargeBall::MoveTowardsTarget(float DeltaTime, FVector TargetLocation)
 	if (Distance <= Tolerance)
 	{
 		Ball->SetWorldLocation(TargetLocation);
+		
 		bArrived = true;
 	}
 	else
