@@ -1,0 +1,144 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3689126666",
+    "Type": "Event",
+    "GUID": "{E76B2BDC-F548-4F52-A7A7-1BD81D09672A}",
+    "Language": "SFX",
+    "Hash": "{234A956A-3439-E144-F3AD-624105019049}",
+    "ObjectPath": "Play_Jump",
+    "ShortName": "Play_Jump",
+    "Path": "Event/Play_Jump.bnk",
+    "Media": [
+     {
+      "Id": "13253609",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Jump\\SFX_Player_Jump_01.wav",
+      "Path": "Media/13253609.wem",
+      "CachePath": "C5/{C517C0D4-2675-F7DC-3773-E6B3653F64DE}.wem"
+     },
+     {
+      "Id": "446218818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Jump\\MC_FOL_Presence_Jump_05.wav",
+      "Path": "Media/446218818.wem",
+      "CachePath": "2E/{2E287E4C-F839-C35C-0C42-669664E05521}.wem"
+     },
+     {
+      "Id": "586543795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Jump\\SFX_Player_Jump_04.wav",
+      "Path": "Media/586543795.wem",
+      "CachePath": "E4/{E464476C-C06A-8FB2-E8DA-4E3071D499E2}.wem"
+     },
+     {
+      "Id": "588652172",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Jump\\MC_FOL_Presence_Jump_04.wav",
+      "Path": "Media/588652172.wem",
+      "CachePath": "C3/{C3B33176-76FB-0174-5AD6-DD1752D64A85}.wem"
+     },
+     {
+      "Id": "747449233",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Jump\\SFX_Player_Jump_03.wav",
+      "Path": "Media/747449233.wem",
+      "CachePath": "92/{928B7EBA-C38B-52DA-B77C-46B9CF0589CC}.wem"
+     },
+     {
+      "Id": "833047138",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Jump\\MC_FOL_Presence_Jump_01.wav",
+      "Path": "Media/833047138.wem",
+      "CachePath": "C3/{C322D832-9A3E-EE8A-F85D-8DD3ACB6E5CB}.wem"
+     },
+     {
+      "Id": "861929397",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Jump\\MC_FOL_Presence_Jump_02.wav",
+      "Path": "Media/861929397.wem",
+      "CachePath": "4A/{4A098499-EFDC-591C-1C99-3C05C0BA7256}.wem"
+     },
+     {
+      "Id": "877329304",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Jump\\MC_FOL_Presence_Jump_03.wav",
+      "Path": "Media/877329304.wem",
+      "CachePath": "84/{84FBF006-10C2-396A-9EBB-D7ECFB85DA84}.wem"
+     },
+     {
+      "Id": "1029463779",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Jump\\SFX_Player_Jump_02.wav",
+      "Path": "Media/1029463779.wem",
+      "CachePath": "52/{52FC2514-0205-9B05-C4FF-3FF9874A7B13}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3689126666",
+      "Name": "Play_Jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Jump",
+      "GUID": "{E76B2BDC-F548-4F52-A7A7-1BD81D09672A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.72629166",
+      "DurationMax": "0.72629166",
+      "MediaRefs": [
+       {
+        "Id": "13253609"
+       },
+       {
+        "Id": "446218818"
+       },
+       {
+        "Id": "586543795"
+       },
+       {
+        "Id": "588652172"
+       },
+       {
+        "Id": "747449233"
+       },
+       {
+        "Id": "833047138"
+       },
+       {
+        "Id": "861929397"
+       },
+       {
+        "Id": "877329304"
+       },
+       {
+        "Id": "1029463779"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6E68535B-3F55-B655-AA52-A387228CF0EA}"
+ }
+}

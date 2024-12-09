@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3704843773",
+    "Type": "Event",
+    "GUID": "{1BDC845E-14DD-410E-A155-8E7947F95C35}",
+    "Language": "SFX",
+    "Hash": "{F0F2F18D-CCBD-C132-50AB-66ED100EB90E}",
+    "ObjectPath": "Play_SFX_Item_Coins_Get",
+    "ShortName": "Play_SFX_Item_Coins_Get",
+    "Path": "Event/Play_SFX_Item_Coins_Get.bnk",
+    "Media": [
+     {
+      "Id": "8393808",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Items\\Coins\\SFX_Item_Coins_Get_01.wav",
+      "Path": "Media/8393808.wem",
+      "CachePath": "41/{41D77F1C-4911-EB7D-C0C8-7AF66A2FCF04}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3704843773",
+      "Name": "Play_SFX_Item_Coins_Get",
+      "ObjectPath": "\\Events\\Default Work Unit\\Items\\Coin\\Play_SFX_Item_Coins_Get",
+      "GUID": "{1BDC845E-14DD-410E-A155-8E7947F95C35}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6153036",
+      "DurationMax": "0.6518914",
+      "MediaRefs": [
+       {
+        "Id": "8393808"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DBCDEACC-0A95-E504-85C3-E765CF479A21}"
+ }
+}

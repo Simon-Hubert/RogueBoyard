@@ -16,4 +16,5 @@ public:
 	virtual ERogueCharacterStateID GetStateID() override;
 	virtual void StateEnter(ERogueCharacterStateID PreviousStateID) override;
 	virtual void StateExit(ERogueCharacterStateID NextStateID) override;
+	
 };

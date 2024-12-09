@@ -1,0 +1,144 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2211787386",
+    "Type": "Event",
+    "GUID": "{9E439D35-01EC-4298-93D6-141B593A65CA}",
+    "Language": "SFX",
+    "Hash": "{1FBCE804-4A5D-678B-1BBD-A624090714B5}",
+    "ObjectPath": "Play_Dash",
+    "ShortName": "Play_Dash",
+    "Path": "Event/Play_Dash.bnk",
+    "Media": [
+     {
+      "Id": "158630385",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Dash\\MC_FOL_Presence_Dash_01.wav",
+      "Path": "Media/158630385.wem",
+      "CachePath": "3D/{3D810969-4E44-DA91-8C23-191F491F1DF1}.wem"
+     },
+     {
+      "Id": "173295922",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Dash\\SFX_Player_Dash_01.wav",
+      "Path": "Media/173295922.wem",
+      "CachePath": "66/{6681CACE-94BE-7EBD-DBAA-B507C1947656}.wem"
+     },
+     {
+      "Id": "173623827",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Dash\\MC_FOL_Presence_Dash_04.wav",
+      "Path": "Media/173623827.wem",
+      "CachePath": "F7/{F77CE5F9-0A72-B116-CCDC-B5FBF55EBBE5}.wem"
+     },
+     {
+      "Id": "239995833",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Dash\\SFX_Player_Dash_04.wav",
+      "Path": "Media/239995833.wem",
+      "CachePath": "76/{7671B595-51A7-9670-6AC9-7DEB5206D261}.wem"
+     },
+     {
+      "Id": "336410587",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Dash\\MC_FOL_Presence_Dash_02.wav",
+      "Path": "Media/336410587.wem",
+      "CachePath": "06/{06532281-C8B2-B8FA-5C8B-3C3D83995DD7}.wem"
+     },
+     {
+      "Id": "369413601",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Dash\\SFX_Player_Dash_02.wav",
+      "Path": "Media/369413601.wem",
+      "CachePath": "1F/{1F59EA32-9C6D-7981-554D-4BBC95D68EEB}.wem"
+     },
+     {
+      "Id": "623548931",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Dash\\MC_FOL_Presence_Dash_05.wav",
+      "Path": "Media/623548931.wem",
+      "CachePath": "78/{78AB030E-B9BB-7000-1492-79EDB5820E20}.wem"
+     },
+     {
+      "Id": "641753166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Player\\Dash\\SFX_Player_Dash_03.wav",
+      "Path": "Media/641753166.wem",
+      "CachePath": "18/{186FF490-94F7-606F-B523-7C6CA42B3EA0}.wem"
+     },
+     {
+      "Id": "984833579",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Dash\\MC_FOL_Presence_Dash_03.wav",
+      "Path": "Media/984833579.wem",
+      "CachePath": "1B/{1B8FAE89-0C89-EB19-0466-9A33883CC1C4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2211787386",
+      "Name": "Play_Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Dash",
+      "GUID": "{9E439D35-01EC-4298-93D6-141B593A65CA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74572915",
+      "DurationMax": "0.80354166",
+      "MediaRefs": [
+       {
+        "Id": "158630385"
+       },
+       {
+        "Id": "173295922"
+       },
+       {
+        "Id": "173623827"
+       },
+       {
+        "Id": "239995833"
+       },
+       {
+        "Id": "336410587"
+       },
+       {
+        "Id": "369413601"
+       },
+       {
+        "Id": "623548931"
+       },
+       {
+        "Id": "641753166"
+       },
+       {
+        "Id": "984833579"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2938CBFD-AA08-67A0-B4C9-407C95EBE30F}"
+ }
+}

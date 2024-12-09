@@ -18,10 +18,22 @@ void URogueCharacterStatePushing::StateEnter(ERogueCharacterStateID PreviousStat
 {
 	Super::StateEnter(PreviousStateID);
 	bPushing = true;
-	Character->GetMesh()->PlayAnimation(StartAttack, false);
-	float Rate = StartAttack->RateScale;
-	if( Rate == 0) Rate = 1;
-	StartAnimTimeRemaining = StartAttack->GetPlayLength() / Rate;
+	if(Character->StateMachine->Sticks.Length() != 0)
+	{
+		Character->PlayAnimMontage(RunStartAttack);
+		float Rate = RunStartAttack->RateScale;
+		if( Rate == 0) Rate = 1;
+		StartAnimTimeRemaining = RunStartAttack->GetPlayLength() / Rate;
+	}
+	else
+	{
+		Character->PlayAnimMontage(StartAttack);
+		float Rate = StartAttack->RateScale;
+		if( Rate == 0) Rate = 1;
+		StartAnimTimeRemaining = StartAttack->GetPlayLength() / Rate;
+	}
+
+
 }
 
 void URogueCharacterStatePushing::StateExit(ERogueCharacterStateID NextStateID)
@@ -36,10 +48,24 @@ void URogueCharacterStatePushing::StateTick(float DeltaTime)
 {
 	Super::StateTick(DeltaTime);
 	StartAnimTimeRemaining -= DeltaTime;
-	if( !bPushed &&StartAnimTimeRemaining <= 0 && !bCharging)
+	if( !bPushed &&StartAnimTimeRemaining <= 0.5f && !bCharging && StateMachine->Sticks.Length() != 0)
 	{
-		Character->GetMesh()->PlayAnimation(ChargingAttack, true);
+		Character->PlayAnimMontage(RunChargingAttack);
 		bCharging = true;
+	}
+	else if(!bPushed &&StartAnimTimeRemaining <= 0.5f && !bCharging && StateMachine->Sticks.Length() == 0)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("IdleCHarging"));
+		Character->PlayAnimMontage(ChargingAttack);
+		bCharging = true;
+	}
+	else if(!bPushed && Character->GetMesh()->GetAnimInstance()->Montage_IsPlaying(ChargingAttack) && bCharging && StateMachine->Sticks.Length() != 0)
+	{
+		Character->PlayAnimMontage(RunChargingAttack);
+	}
+	else if(!bPushed && Character->GetMesh()->GetAnimInstance()->Montage_IsPlaying(RunChargingAttack) && bCharging && StateMachine->Sticks.Length() == 0)
+	{
+		Character->PlayAnimMontage(ChargingAttack);
 	}
 	else if (bPushed)
 	{
@@ -77,20 +103,37 @@ void URogueCharacterStatePushing::Movement(float X, float Y)
 bool URogueCharacterStatePushing::Pushing(TArray<AActor*> Actors , float PushForce)
 {
 	bCharging = false;
+	int i = 0;
+	//UE_LOG(LogTemp, Warning, TEXT("Attacking"));
+    if(Character->StateMachine->Sticks.Length() != 0)
+    {
+    	Character->PlayAnimMontage(RunAttacking);
+    	float Rate = RunAttacking->RateScale;
+    	if( Rate == 0) Rate = 1;
+    	StartAnimTimeRemaining = RunAttacking->GetPlayLength() / Rate;
+    }
+    else
+    {
+    	Character->PlayAnimMontage(Attacking);
+    	float Rate = Attacking->RateScale;
+    	if( Rate == 0) Rate = 1;
+    	StartAnimTimeRemaining = Attacking->GetPlayLength() / Rate;
+    	UE_LOG(LogTemp, Warning, TEXT("Idle Attack"));
+    }	
 	for (AActor* Actor : Actors)
 	{
 		if(Cast<ARogueCharacter>(Actor) == this->Character) continue;
 		FVector Dir = Actor->GetActorLocation() - Character->GetActorLocation();
 		Dir.Normalize();
 		UPushableComponent* pushComp = Cast<UPushableComponent>(Actor->GetComponentByClass(UPushableComponent::StaticClass()));
-		if(pushComp != nullptr) pushComp->Push(Dir, PushForce);
+		if(pushComp != nullptr)
+		{
+			pushComp->Push(Dir, PushForce);
+			i++;
+		}
 	}
-	UE_LOG(LogTemp, Warning, TEXT("Attacking"));
-	Character->GetMesh()->PlayAnimation(Attacking, false);
-	float Rate = Attacking->RateScale;
-	if( Rate == 0) Rate = 1;
-	StartAnimTimeRemaining = Attacking->GetPlayLength() / Rate;
+
 	bPushed = true;
-	return true;
+	return i > 0;
 }	
 

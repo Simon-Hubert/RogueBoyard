@@ -65,6 +65,7 @@ void ARogueCharacter::TickStateMachine(float DeltaTime) const
 
 void ARogueCharacter::TakeDamage(int Damage)
 {
+	if(bIsInvincible) return;
 	CurrentLives -= Damage;
 	if(CurrentLives <= 0) Die();
 }
@@ -95,8 +96,7 @@ void ARogueCharacter::SetCamera()
 {
 	if(ARogueGameMode* GameMode = Cast<ARogueGameMode>(GetWorld()->GetAuthGameMode()))
 	{
-		int ActiveRoom = GetWorld()->GetSubsystem<URogueRoomSubsystem>()->ActiveRoomId;
-		Camera = GameMode->RoomManagers[ActiveRoom]->RoomCamera;
+		Camera = GameMode->ActiveRoom->RoomCamera;
 	}
 }
 

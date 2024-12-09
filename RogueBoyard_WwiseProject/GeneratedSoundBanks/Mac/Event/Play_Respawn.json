@@ -1,0 +1,32 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "365318234",
+    "Type": "Event",
+    "GUID": "{172AE185-9A4A-4A40-A2B5-1F770F8A2C58}",
+    "Language": "SFX",
+    "Hash": "{812CC2D5-3260-8276-2618-69CAFCE8D4EB}",
+    "ObjectPath": "Play_Respawn",
+    "ShortName": "Play_Respawn",
+    "Path": "Event/Play_Respawn.bnk",
+    "Events": [
+     {
+      "Id": "365318234",
+      "Name": "Play_Respawn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Voices\\Play_Respawn",
+      "GUID": "{172AE185-9A4A-4A40-A2B5-1F770F8A2C58}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{50BB5397-46F5-22E8-B72A-942B94137861}"
+ }
+}

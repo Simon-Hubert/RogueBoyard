@@ -3,6 +3,7 @@
 
 #include "Characters/States/RogueCharacterStateDead.h"
 
+#include "Camera/CameraWorldSubsystem.h"
 #include "Characters/RogueCharacter.h"
 #include "Characters/RogueCharacterStateMachine.h"
 
@@ -15,7 +16,8 @@ ERogueCharacterStateID URogueCharacterStateDead::GetStateID()
 void URogueCharacterStateDead::StateEnter(ERogueCharacterStateID PreviousStateID)
 {
 	Super::StateEnter(PreviousStateID);
-	Character->GetMesh()->PlayAnimation(DeadMontage, false);
+	GetWorld()->GetSubsystem<UCameraWorldSubsystem>()->RemoveFollowTarget(Character);
+	Character->PlayAnimMontage(DeadMontage, false);
 	if(ResurectMontage) ResurectAnimTimeRemaining = ResurectMontage->GetPlayLength();
 	Character->OnCharacterDeathEvent.Broadcast();
 }
@@ -24,30 +26,18 @@ void URogueCharacterStateDead::StateExit(ERogueCharacterStateID NextStateID)
 {
 	Super::StateExit(NextStateID);
 	Character->CurrentLives = Character->LivesMAX;
+	UE_LOG(LogTemp, Warning, TEXT("Character Resurected without permission"))
 	bRespawned = false;
 }
 
 void URogueCharacterStateDead::StateTick(float DeltaTime)
 {
 	Super::StateTick(DeltaTime);
-	if(Character->GetMesh()->GetAnimInstance()->Montage_IsPlaying(ResurectMontage))
-	{
-		if(!bRespawned)
-		{
-			Character->SetActorLocation(RespawnTransform.GetLocation(), false);
-			bRespawned = true;
-		}
-
-		ResurectAnimTimeRemaining -= DeltaTime;
-		if(ResurectAnimTimeRemaining <= 0)
-		{
-			StateMachine->ChangeState(ERogueCharacterStateID::Idle);
-		}
-	}
 }
 
 void URogueCharacterStateDead::Resurrect()
 {
 	Super::Resurrect();
-	Character->GetMesh()->PlayAnimation(DeadMontage, false);
+	UE_LOG(LogTemp, Warning, TEXT("Character Resurected"))
+	Character->PlayAnimMontage(DeadMontage);
 }

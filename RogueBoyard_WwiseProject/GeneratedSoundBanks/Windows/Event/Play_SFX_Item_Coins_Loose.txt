@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	393244523	Play_SFX_Item_Coins_Loose			\Default Work Unit\Items\Coin\Play_SFX_Item_Coins_Loose	
+

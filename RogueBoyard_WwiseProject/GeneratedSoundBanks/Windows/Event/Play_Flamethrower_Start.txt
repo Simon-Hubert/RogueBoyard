@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3467119565	Play_Flamethrower_Start			\Default Work Unit\Traps\Flamethrower\Play_Flamethrower_Start	
+

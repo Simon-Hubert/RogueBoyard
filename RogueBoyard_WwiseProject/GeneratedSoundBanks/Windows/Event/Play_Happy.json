@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3748496336",
+    "Type": "Event",
+    "GUID": "{72961CFD-818C-4F16-8F72-F6A95E30EF25}",
+    "Language": "SFX",
+    "Hash": "{C73B1881-7E19-DCAF-2845-C8E1B6BF4010}",
+    "ObjectPath": "Play_Happy",
+    "ShortName": "Play_Happy",
+    "Path": "Event/Play_Happy.bnk",
+    "Media": [
+     {
+      "Id": "237377148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Happy\\MC_Voice_Happy_03.wav",
+      "Path": "Media/237377148.wem",
+      "CachePath": "35/{356DB053-DD24-9DCA-A1C9-87B96BF78FC9}.wem"
+     },
+     {
+      "Id": "976551661",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Happy\\MC_Voice_Happy_01.wav",
+      "Path": "Media/976551661.wem",
+      "CachePath": "49/{49DA871F-374B-2937-E071-B6337A06A43A}.wem"
+     },
+     {
+      "Id": "1023230878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Happy\\MC_Voice_Happy_02.wav",
+      "Path": "Media/1023230878.wem",
+      "CachePath": "95/{95F28318-FC9D-03F6-5B1D-30E86944DFFA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3748496336",
+      "Name": "Play_Happy",
+      "ObjectPath": "\\Events\\Default Work Unit\\Voices\\Play_Happy",
+      "GUID": "{72961CFD-818C-4F16-8F72-F6A95E30EF25}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "1.9333333",
+      "MediaRefs": [
+       {
+        "Id": "237377148"
+       },
+       {
+        "Id": "976551661"
+       },
+       {
+        "Id": "1023230878"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1EB85AF1-B0F3-C27B-0ABE-937B880D7596}"
+ }
+}

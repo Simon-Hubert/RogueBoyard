@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3225017982",
+    "Type": "Event",
+    "GUID": "{CCA268A2-A6F7-42C4-A867-7617CF10E77C}",
+    "Language": "SFX",
+    "Hash": "{67B47DE6-F799-ACD2-9219-AA2062DF5D41}",
+    "ObjectPath": "Play_Sad",
+    "ShortName": "Play_Sad",
+    "Path": "Event/Play_Sad.bnk",
+    "Media": [
+     {
+      "Id": "703787866",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MC_Voice_Sad_01.wav",
+      "Path": "Media/703787866.wem",
+      "CachePath": "D9/{D94B4AE7-94E8-3A19-61AF-01A7D72FB500}.wem"
+     },
+     {
+      "Id": "791613428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MC_Voice_Sad_03.wav",
+      "Path": "Media/791613428.wem",
+      "CachePath": "2F/{2F5B2A4A-5218-87AE-3817-805D773025D6}.wem"
+     },
+     {
+      "Id": "821806242",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MC_Voice_Sad_02.wav",
+      "Path": "Media/821806242.wem",
+      "CachePath": "56/{569EEA2A-2D8C-10DB-C4D2-CC05B76C080C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3225017982",
+      "Name": "Play_Sad",
+      "ObjectPath": "\\Events\\Default Work Unit\\Voices\\Play_Sad",
+      "GUID": "{CCA268A2-A6F7-42C4-A867-7617CF10E77C}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "703787866"
+       },
+       {
+        "Id": "791613428"
+       },
+       {
+        "Id": "821806242"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E31E1BEF-3905-3A11-0DEC-A075A8D815DC}"
+ }
+}

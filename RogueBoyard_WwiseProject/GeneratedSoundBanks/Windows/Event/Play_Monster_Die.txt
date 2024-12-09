@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	653261611	Play_Monster_Die			\Default Work Unit\Traps\MonsterSpawn\Play_Monster_Die	
+

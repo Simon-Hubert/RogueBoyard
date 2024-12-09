@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1172822028	Play_Death			\Default Work Unit\Voices\Play_Death	
+

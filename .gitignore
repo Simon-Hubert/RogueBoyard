@@ -61,6 +61,7 @@ Binaries/Win64/*
 
 Plugins/*/Binaries/*
 !Plugins/Wwise/Binaries/*
+!Plugins/Wwise/Binaries/Win64/UnrealEditor.modules
 !Plugins/Wwise/Binaries/Win64/*.dll
 !Plugins/Wwise/Binaries/Mac/*.dylib
 !Plugins/Wwise/ThirdParty/**/*.dll
@@ -68,7 +69,9 @@ Plugins/*/Binaries/*
 !Plugins/WwiseNiagara/Binaries/*
 !Plugins/WwiseNiagara/Binaries/Win64/*.dll
 !Plugins/WwiseNiagara/Binaries/Mac/*.dylib
-
+!Plugins/WwiseSoundEngine/Binaries/*
+!Plugins/WwiseSoundEngine/Binaries/Win64/*.dll
+!Plugins/WwiseSoundEngine/Binaries/Mac/*.dylib
 # Builds
 Build/*
 

@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "83993043",
+    "Type": "Event",
+    "GUID": "{8A47C712-DA2A-4DAA-BE32-5453D6BE7675}",
+    "Language": "SFX",
+    "Hash": "{DAB005C0-6803-DFEC-25BE-2E16AF8880AD}",
+    "ObjectPath": "Play_Goal",
+    "ShortName": "Play_Goal",
+    "Path": "Event/Play_Goal.bnk",
+    "Media": [
+     {
+      "Id": "5496341",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Item_Ball_Goal_02.wav",
+      "Path": "Media/5496341.wem",
+      "CachePath": "9A/{9A6956D0-9CE2-348B-13DD-5411651932EA}.wem"
+     },
+     {
+      "Id": "179583185",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Item_Ball_Goal_01.wav",
+      "Path": "Media/179583185.wem",
+      "CachePath": "72/{72799183-791B-21E9-8A7D-323112397EFB}.wem"
+     },
+     {
+      "Id": "1008256018",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Item_Ball_Goal_03.wav",
+      "Path": "Media/1008256018.wem",
+      "CachePath": "F9/{F9059A90-6DDD-4BAB-1A68-BA21C5BA64D2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "83993043",
+      "Name": "Play_Goal",
+      "ObjectPath": "\\Events\\Default Work Unit\\Items\\Ball\\Play_Goal",
+      "GUID": "{8A47C712-DA2A-4DAA-BE32-5453D6BE7675}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3394583",
+      "DurationMax": "1.3394583",
+      "MediaRefs": [
+       {
+        "Id": "5496341"
+       },
+       {
+        "Id": "179583185"
+       },
+       {
+        "Id": "1008256018"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0CA07935-67B9-4F59-317B-9937696F5194}"
+ }
+}

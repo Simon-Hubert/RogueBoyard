@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2424852986	Thunder_Loop			\Default Work Unit\Traps\Lightning\Thunder_Loop	
+

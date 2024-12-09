@@ -18,13 +18,10 @@ public:
 
 	virtual void EndRoom() override;
 
-	UPROPERTY(EditAnywhere)
-	USceneComponent* GrimoireSpawnPoint;
-
 protected:
 	virtual void BeginPlay() override;
-
-private:
-	UPROPERTY(EditAnywhere)
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	ARogueGrimoire* Grimoire;
+
 };

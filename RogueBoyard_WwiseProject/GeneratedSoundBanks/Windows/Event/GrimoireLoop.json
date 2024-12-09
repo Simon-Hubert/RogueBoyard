@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2688936153",
+    "Type": "Event",
+    "GUID": "{6F99B3F0-BB49-4E04-9074-DEB6BA458A10}",
+    "Language": "SFX",
+    "Hash": "{170B3538-199D-0C40-C51F-A2B6FA1201BD}",
+    "ObjectPath": "GrimoireLoop",
+    "ShortName": "GrimoireLoop",
+    "Path": "Event/GrimoireLoop.bnk",
+    "Media": [
+     {
+      "Id": "386267839",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Grimoire\\SFX_Item_Grimoire_LP_01.wav",
+      "Path": "Media/386267839.wem",
+      "CachePath": "C5/{C5214145-724C-0311-9759-70FEA2840E3F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2688936153",
+      "Name": "GrimoireLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Interactables\\GrimoireLoop",
+      "GUID": "{6F99B3F0-BB49-4E04-9074-DEB6BA458A10}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "386267839"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E4A24F92-9F3B-89E0-50A5-29AD46B86228}"
+ }
+}

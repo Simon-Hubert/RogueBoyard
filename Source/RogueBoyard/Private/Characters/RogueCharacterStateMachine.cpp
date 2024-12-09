@@ -12,7 +12,7 @@ void URogueCharacterStateMachine::Init(ARogueCharacter* InCharacter)
 	Character = InCharacter;
 	FindStates();
 	InitStates();
-	ChangeState(ERogueCharacterStateID::Idle);
+	ChangeState(ERogueCharacterStateID::Waiting);
 }
 
 void URogueCharacterStateMachine::Tick(float DeltaTime)

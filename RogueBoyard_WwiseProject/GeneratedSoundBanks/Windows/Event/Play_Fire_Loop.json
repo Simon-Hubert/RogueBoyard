@@ -1,0 +1,82 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1779335",
+    "Type": "Event",
+    "GUID": "{DA6D946A-1FF2-408A-8FE1-A4E3C4C7471C}",
+    "Language": "SFX",
+    "Hash": "{C51688FE-7DAE-B760-08D2-35A4D163E118}",
+    "ObjectPath": "Play_Fire_Loop",
+    "ShortName": "Play_Fire_Loop",
+    "Path": "Event/Play_Fire_Loop.bnk",
+    "Media": [
+     {
+      "Id": "163178904",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_LP_04.wav",
+      "Path": "Media/163178904.wem",
+      "CachePath": "20/{20F7DFD8-62B2-FB3D-AC98-2D03C4C3165D}.wem"
+     },
+     {
+      "Id": "463781659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_LP_01.wav",
+      "Path": "Media/463781659.wem",
+      "CachePath": "46/{46ADB49F-FAC2-C8D3-BBD1-ED2FD2D35947}.wem"
+     },
+     {
+      "Id": "570881831",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_LP_02.wav",
+      "Path": "Media/570881831.wem",
+      "CachePath": "2A/{2AF5D226-05E1-C295-AABE-4D40CD92B4D0}.wem"
+     },
+     {
+      "Id": "663725228",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_LP_03.wav",
+      "Path": "Media/663725228.wem",
+      "CachePath": "DC/{DC22EE84-A023-B835-BE54-B1A6E0443C3F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1779335",
+      "Name": "Play_Fire_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Flamethrower\\Play_Fire_Loop",
+      "GUID": "{DA6D946A-1FF2-408A-8FE1-A4E3C4C7471C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "163178904"
+       },
+       {
+        "Id": "463781659"
+       },
+       {
+        "Id": "570881831"
+       },
+       {
+        "Id": "663725228"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B0EBBC86-AA40-F50B-85A9-D00AC25A4552}"
+ }
+}

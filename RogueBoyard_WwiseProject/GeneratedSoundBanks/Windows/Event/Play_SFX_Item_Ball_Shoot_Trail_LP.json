@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2405502875",
+    "Type": "Event",
+    "GUID": "{40B6AEF9-02F4-4DA8-9985-C7D9B258EE74}",
+    "Language": "SFX",
+    "Hash": "{9EEDEF4E-AC26-1513-4822-173810077CC8}",
+    "ObjectPath": "Play_SFX_Item_Ball_Shoot_Trail_LP",
+    "ShortName": "Play_SFX_Item_Ball_Shoot_Trail_LP",
+    "Path": "Event/Play_SFX_Item_Ball_Shoot_Trail_LP.bnk",
+    "Media": [
+     {
+      "Id": "105320657",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Item_Ball_Shoot_Trail_LP.wav",
+      "Path": "Media/105320657.wem",
+      "CachePath": "AB/{AB60C157-4C57-5C2F-7F37-4B38EF397F80}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2405502875",
+      "Name": "Play_SFX_Item_Ball_Shoot_Trail_LP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Items\\Ball\\Play_SFX_Item_Ball_Shoot_Trail_LP",
+      "GUID": "{40B6AEF9-02F4-4DA8-9985-C7D9B258EE74}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "105320657"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A309B63A-B9C1-CCB3-7A5D-4FC91477A0D6}"
+ }
+}

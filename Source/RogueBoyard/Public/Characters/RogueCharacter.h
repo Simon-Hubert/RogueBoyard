@@ -71,6 +71,12 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 	int CurrentLives;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float TimeInvincibleDash = 0.0f;
+	
+	UPROPERTY(BlueprintReadWrite)
+	bool bIsInvincible = false;
+
 private:
 	void Die();
 	

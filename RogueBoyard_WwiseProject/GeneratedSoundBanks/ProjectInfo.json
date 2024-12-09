@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "RogueBoyard_WwiseProject",
+   "GUID": "{A5ABEC22-56C2-42DA-9E77-7AB3EDC9B541}",
+   "Generator": "2024.1.0.8669"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{6A87442B-7838-40E7-B339-99697E2B02F3}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{98AD4328-64C9-4FA3-A852-D0158152E088}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{7DBB814F-0E52-4906-B10C-E63E15BBBC0D}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{1375B64F-A315-4A88-B2AB-DEE14A3F9003}"
+ }
+}

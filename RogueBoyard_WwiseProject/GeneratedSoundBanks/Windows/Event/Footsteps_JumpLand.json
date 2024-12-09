@@ -1,0 +1,239 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1714162474",
+    "Type": "Event",
+    "GUID": "{189C2015-ADCF-4B20-9466-91AE120151DF}",
+    "Language": "SFX",
+    "Hash": "{A7C2BA7F-48B0-A96F-E8B7-308476C952E9}",
+    "ObjectPath": "Footsteps_JumpLand",
+    "ShortName": "Footsteps_JumpLand",
+    "Path": "Event/Footsteps_JumpLand.bnk",
+    "Media": [
+     {
+      "Id": "11563035",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Stone\\JumpLand\\MC_FT_Stone_JumpLand_02.wav",
+      "Path": "Media/11563035.wem",
+      "CachePath": "C7/{C7645E9E-DA68-62FA-8B56-C5846018CB0F}.wem"
+     },
+     {
+      "Id": "110820053",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Carpet\\JumpLand\\MC_FT_Carpet_JumpLand_03.wav",
+      "Path": "Media/110820053.wem",
+      "CachePath": "FE/{FE457FD6-856D-29B3-92F4-86EBA7945968}.wem"
+     },
+     {
+      "Id": "263733274",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Stone\\JumpLand\\MC_FT_Stone_JumpLand_01.wav",
+      "Path": "Media/263733274.wem",
+      "CachePath": "2F/{2FC4329B-5569-69D3-6027-F548E5C8A8A6}.wem"
+     },
+     {
+      "Id": "484960438",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Wood\\JumpLand\\MC_FT_Wood_JumpLand_01.wav",
+      "Path": "Media/484960438.wem",
+      "CachePath": "AA/{AA27832A-96BE-47AF-2B88-9F0CF31BD8EC}.wem"
+     },
+     {
+      "Id": "545603145",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Carpet\\JumpLand\\MC_FT_Carpet_JumpLand_04.wav",
+      "Path": "Media/545603145.wem",
+      "CachePath": "7F/{7FE40E80-DB55-E996-2777-78F7779649EA}.wem"
+     },
+     {
+      "Id": "725675553",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Wood\\JumpLand\\MC_FT_Wood_JumpLand_02.wav",
+      "Path": "Media/725675553.wem",
+      "CachePath": "3E/{3EC65CB6-3ECC-14DB-8DED-1777F85770B2}.wem"
+     },
+     {
+      "Id": "778595890",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Wood\\JumpLand\\MC_FT_Wood_JumpLand_03.wav",
+      "Path": "Media/778595890.wem",
+      "CachePath": "0C/{0CB61A9E-4663-0323-E2EC-787A8064213B}.wem"
+     },
+     {
+      "Id": "875003870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Carpet\\JumpLand\\MC_FT_Carpet_JumpLand_02.wav",
+      "Path": "Media/875003870.wem",
+      "CachePath": "92/{921618D6-0EA6-4088-F13C-3703DE24F853}.wem"
+     },
+     {
+      "Id": "908848583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Wood\\JumpLand\\MC_FT_Wood_JumpLand_04.wav",
+      "Path": "Media/908848583.wem",
+      "CachePath": "58/{5893DC43-1CBE-F714-0D6D-BE8167D42D02}.wem"
+     },
+     {
+      "Id": "973566481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Stone\\JumpLand\\MC_FT_Stone_JumpLand_04.wav",
+      "Path": "Media/973566481.wem",
+      "CachePath": "25/{259B7CC4-9E4E-4B4B-8AEE-5353B77EA6F8}.wem"
+     },
+     {
+      "Id": "1001811942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Stone\\JumpLand\\MC_FT_Stone_JumpLand_03.wav",
+      "Path": "Media/1001811942.wem",
+      "CachePath": "11/{110093E9-52AB-7FCB-F9DA-BE8D1CE5DD29}.wem"
+     },
+     {
+      "Id": "1067659065",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Footsteps\\Carpet\\JumpLand\\MC_FT_Carpet_JumpLand_01.wav",
+      "Path": "Media/1067659065.wem",
+      "CachePath": "13/{13F09BDF-F8E3-4E44-58F8-F512F6BFC049}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1714162474",
+      "Name": "Footsteps_JumpLand",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Footsteps\\Footsteps_JumpLand",
+      "GUID": "{189C2015-ADCF-4B20-9466-91AE120151DF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.16666667",
+      "DurationMax": "0.23333333",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2000241759",
+         "Id": "1216965916",
+         "GUID": "{03102C2F-213E-40E5-A557-636FF68BEBD7}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "11563035"
+         },
+         {
+          "Id": "263733274"
+         },
+         {
+          "Id": "973566481"
+         },
+         {
+          "Id": "1001811942"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2000241759",
+         "Id": "2412606308",
+         "GUID": "{03E9CEB1-DCE6-406B-9329-D2BBC9C62624}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "110820053"
+         },
+         {
+          "Id": "545603145"
+         },
+         {
+          "Id": "875003870"
+         },
+         {
+          "Id": "1067659065"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2000241759",
+         "Id": "2058049674",
+         "GUID": "{F0F89FCA-6C44-466F-8DD5-5BCE8DE6182B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "484960438"
+         },
+         {
+          "Id": "725675553"
+         },
+         {
+          "Id": "778595890"
+         },
+         {
+          "Id": "908848583"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2000241759",
+      "Name": "FootstepsGround",
+      "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsGround",
+      "GUID": "{3714E8A2-1B6F-4F03-9130-8CFF18586776}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsGround\\Stone",
+        "GUID": "{03102C2F-213E-40E5-A557-636FF68BEBD7}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsGround\\Wood",
+        "GUID": "{F0F89FCA-6C44-466F-8DD5-5BCE8DE6182B}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootstepsGround\\Carpet",
+        "GUID": "{03E9CEB1-DCE6-406B-9329-D2BBC9C62624}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F0A0B643-3B1C-D70A-1BDC-389B324ACAD0}"
+ }
+}

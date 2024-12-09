@@ -21,7 +21,7 @@ public:
 	virtual void StateTick(float DeltaTime) override;
 	
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UAnimationAsset> DashMontage;
+	TObjectPtr<UAnimMontage> DashMontage;
 	
 	UPROPERTY(EditAnywhere)
 	float ForceImpulse;

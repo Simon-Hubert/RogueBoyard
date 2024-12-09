@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1172822028",
+    "Type": "Event",
+    "GUID": "{B762F491-487A-433B-A56C-BCE4E38C75F8}",
+    "Language": "SFX",
+    "Hash": "{70B74CB5-DBD0-4D65-6F0C-21B3EC3A33B6}",
+    "ObjectPath": "Play_Death",
+    "ShortName": "Play_Death",
+    "Path": "Event/Play_Death.bnk",
+    "Media": [
+     {
+      "Id": "213833356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MC_Voice_Death_03.wav",
+      "Path": "Media/213833356.wem",
+      "CachePath": "66/{667096AE-8357-6C4E-54D6-272EFF680C62}.wem"
+     },
+     {
+      "Id": "649665286",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MC_Voice_Death_02.wav",
+      "Path": "Media/649665286.wem",
+      "CachePath": "75/{7525F646-87F1-3A47-0B31-378A4F2E4A3A}.wem"
+     },
+     {
+      "Id": "782093036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MC_Voice_Death_01.wav",
+      "Path": "Media/782093036.wem",
+      "CachePath": "E4/{E46121C2-E245-BDF8-8D9C-FDD60B5D039F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1172822028",
+      "Name": "Play_Death",
+      "ObjectPath": "\\Events\\Default Work Unit\\Voices\\Play_Death",
+      "GUID": "{B762F491-487A-433B-A56C-BCE4E38C75F8}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8060209",
+      "DurationMax": "2.1",
+      "MediaRefs": [
+       {
+        "Id": "213833356"
+       },
+       {
+        "Id": "649665286"
+       },
+       {
+        "Id": "782093036"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C999AEAF-A284-DEBC-C2F2-9D3F914BC3DA}"
+ }
+}

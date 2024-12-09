@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "674522502",
+    "Type": "Event",
+    "GUID": "{AA365A47-C3B1-496E-AEA8-A6722FC2C9DA}",
+    "Language": "SFX",
+    "Hash": "{DA5EA24C-300F-28B9-6ACB-284B1F525DAB}",
+    "ObjectPath": "Land",
+    "ShortName": "Land",
+    "Path": "Event/Land.bnk",
+    "Media": [
+     {
+      "Id": "216378727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Land\\MC_FOL_Presence_Land_05.wav",
+      "Path": "Media/216378727.wem",
+      "CachePath": "65/{65E5586D-DD58-198E-F202-7F6B191A2A55}.wem"
+     },
+     {
+      "Id": "328191956",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Land\\MC_FOL_Presence_Land_01.wav",
+      "Path": "Media/328191956.wem",
+      "CachePath": "55/{5557A23B-0A4C-9050-ECDE-4DB3C561290B}.wem"
+     },
+     {
+      "Id": "531881013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Land\\MC_FOL_Presence_Land_03.wav",
+      "Path": "Media/531881013.wem",
+      "CachePath": "AB/{AB1AB950-EAA2-8772-9CBB-6C180DE8DFB5}.wem"
+     },
+     {
+      "Id": "641642094",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Land\\MC_FOL_Presence_Land_02.wav",
+      "Path": "Media/641642094.wem",
+      "CachePath": "E7/{E7CFD5BA-CD32-FA73-D809-04A3AB424ECE}.wem"
+     },
+     {
+      "Id": "913897509",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Land\\MC_FOL_Presence_Land_04.wav",
+      "Path": "Media/913897509.wem",
+      "CachePath": "62/{62668EB7-6F53-EB9B-A2C1-21F926C8D752}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "674522502",
+      "Name": "Land",
+      "ObjectPath": "\\Events\\Default Work Unit\\MainEvents\\Foley\\Land",
+      "GUID": "{AA365A47-C3B1-496E-AEA8-A6722FC2C9DA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.45583335",
+      "DurationMax": "0.45583335",
+      "MediaRefs": [
+       {
+        "Id": "216378727"
+       },
+       {
+        "Id": "328191956"
+       },
+       {
+        "Id": "531881013"
+       },
+       {
+        "Id": "641642094"
+       },
+       {
+        "Id": "913897509"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{84C8447B-9A53-78C0-CDC9-4A11433F9DDC}"
+ }
+}

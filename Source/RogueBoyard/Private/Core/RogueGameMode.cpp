@@ -76,11 +76,12 @@ void ARogueGameMode::OnCharacterDeath()
 		if( Character->StateMachine->CurrentStateID == ERogueCharacterStateID::Dead)
 		{
 			NbDeadPlayers++;
+			UE_LOG(LogTemp, Warning, TEXT("DeadCharacter, total : %d"), NbDeadPlayers)
 		}
 	}
 	if(NbDeadPlayers >= 3)
 	{
-		EndBattleRoom();
+		ActiveRoom->EndRoom();
 	}
 }
 
@@ -88,8 +89,13 @@ void ARogueGameMode::OnRoomLoaded()
 {
 	if(!bIsFirstRoomLoaded)
 	{
+		bIsFirstRoomLoaded = true;
 		StartLobbyRoom();
 	}
+}
+
+void ARogueGameMode::GameEnd() {
+	ReceiveGameEnd();
 }
 
 void ARogueGameMode::LastRoomLoaded() {

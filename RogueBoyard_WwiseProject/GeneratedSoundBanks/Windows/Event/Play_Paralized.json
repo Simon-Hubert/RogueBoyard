@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1687242994",
+    "Type": "Event",
+    "GUID": "{68FB9B44-D46A-436E-80FD-53C1EC7A04BA}",
+    "Language": "SFX",
+    "Hash": "{30B375F3-E373-DCB8-2B91-A873DFC2CA51}",
+    "ObjectPath": "Play_Paralized",
+    "ShortName": "Play_Paralized",
+    "Path": "Event/Play_Paralized.bnk",
+    "Media": [
+     {
+      "Id": "90767962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Paralized\\MC_Voice_Paralyzed_03.wav",
+      "Path": "Media/90767962.wem",
+      "CachePath": "37/{37CB59B8-67C8-7392-4A08-F4F907A68342}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1687242994",
+      "Name": "Play_Paralized",
+      "ObjectPath": "\\Events\\Default Work Unit\\Voices\\Play_Paralized",
+      "GUID": "{68FB9B44-D46A-436E-80FD-53C1EC7A04BA}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.7",
+      "DurationMax": "2.7",
+      "MediaRefs": [
+       {
+        "Id": "90767962"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{42C2DF9D-1F0B-B896-C5EB-C3AB884200EC}"
+ }
+}

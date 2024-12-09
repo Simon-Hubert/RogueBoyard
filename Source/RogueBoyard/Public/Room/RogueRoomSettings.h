@@ -17,7 +17,7 @@ public:
 	UPROPERTY(Config, EditAnywhere, Category="Rooms Settings")
 	float MaxRoomSize;
 
-	UPROPERTY(Config, EditAnywhere, Category="Rooms Settings")
+	UPROPERTY(Config, EditAnywhere, BlueprintReadOnly, Category="Rooms Settings")
 	int NumberOfRooms;
 
 	UPROPERTY(Config, EditAnywhere, Category="Rooms Settings")

@@ -25,8 +25,11 @@ public:
 	virtual void Push() override;
 
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UAnimationAsset> IdleMontage;
+	TObjectPtr<UAnimMontage> IdleMontage;
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UAnimMontage> InteractMontage;
 
 private:
 	FHitResult HitResult;
+	float InteractAnimTime;
 };

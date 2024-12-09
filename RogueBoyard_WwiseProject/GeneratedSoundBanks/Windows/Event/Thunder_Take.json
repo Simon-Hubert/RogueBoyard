@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2148989521",
+    "Type": "Event",
+    "GUID": "{5233D1B7-1A59-4F88-A66C-E950CAB97880}",
+    "Language": "SFX",
+    "Hash": "{2DC7E652-136D-6431-76AA-E52E3F7A2841}",
+    "ObjectPath": "Thunder_Take",
+    "ShortName": "Thunder_Take",
+    "Path": "Event/Thunder_Take.bnk",
+    "Media": [
+     {
+      "Id": "537024173",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_Take_01.wav",
+      "Path": "Media/537024173.wem",
+      "CachePath": "08/{084C8C3C-B573-F9AF-81EA-0E180B7FA5D4}.wem"
+     },
+     {
+      "Id": "915541810",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_Take_03.wav",
+      "Path": "Media/915541810.wem",
+      "CachePath": "65/{65A93015-B491-9846-C906-FD6A07F08F99}.wem"
+     },
+     {
+      "Id": "976434235",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_Take_02.wav",
+      "Path": "Media/976434235.wem",
+      "CachePath": "BE/{BE63C96E-0EAC-8ECE-0525-7AC9B727DD45}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2148989521",
+      "Name": "Thunder_Take",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Lightning\\Thunder_Take",
+      "GUID": "{5233D1B7-1A59-4F88-A66C-E950CAB97880}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6666667",
+      "DurationMax": "0.6666667",
+      "MediaRefs": [
+       {
+        "Id": "537024173"
+       },
+       {
+        "Id": "915541810"
+       },
+       {
+        "Id": "976434235"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E9540DFA-CDC8-B7C9-1DCB-408F43D6ADD4}"
+ }
+}

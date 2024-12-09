@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1172822028",
+    "Type": "Event",
+    "GUID": "{B762F491-487A-433B-A56C-BCE4E38C75F8}",
+    "Language": "SFX",
+    "Hash": "{60ED38C8-7D02-BC51-7FB8-7280ECAFC06C}",
+    "ObjectPath": "Play_Death",
+    "ShortName": "Play_Death",
+    "Path": "Event/Play_Death.bnk",
+    "Media": [
+     {
+      "Id": "340240612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Death\\MC_Voice_Death_01.wav",
+      "Path": "Media/340240612.wem",
+      "CachePath": "E4/{E46121C2-E245-BDF8-8D9C-FDD60B5D039F}.wem"
+     },
+     {
+      "Id": "418392713",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Death\\MC_Voice_Death_03.wav",
+      "Path": "Media/418392713.wem",
+      "CachePath": "66/{667096AE-8357-6C4E-54D6-272EFF680C62}.wem"
+     },
+     {
+      "Id": "1032840729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\MC_Voice\\Death\\MC_Voice_Death_02.wav",
+      "Path": "Media/1032840729.wem",
+      "CachePath": "75/{7525F646-87F1-3A47-0B31-378A4F2E4A3A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1172822028",
+      "Name": "Play_Death",
+      "ObjectPath": "\\Events\\Default Work Unit\\Voices\\Play_Death",
+      "GUID": "{B762F491-487A-433B-A56C-BCE4E38C75F8}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8060209",
+      "DurationMax": "2.1",
+      "MediaRefs": [
+       {
+        "Id": "340240612"
+       },
+       {
+        "Id": "418392713"
+       },
+       {
+        "Id": "1032840729"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2A6E3398-11A9-DD01-84E6-DA04F8C15FEB}"
+ }
+}

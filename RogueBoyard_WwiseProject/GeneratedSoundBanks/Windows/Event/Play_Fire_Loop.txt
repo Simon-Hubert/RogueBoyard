@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1779335	Play_Fire_Loop			\Default Work Unit\Traps\Flamethrower\Play_Fire_Loop	
+

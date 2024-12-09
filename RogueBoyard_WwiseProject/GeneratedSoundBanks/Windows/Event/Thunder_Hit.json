@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3561017543",
+    "Type": "Event",
+    "GUID": "{2C5C3770-7A52-4169-AD1C-A5D77D26403E}",
+    "Language": "SFX",
+    "Hash": "{ABB228CA-CA50-F2B7-EABA-CD3597F981BB}",
+    "ObjectPath": "Thunder_Hit",
+    "ShortName": "Thunder_Hit",
+    "Path": "Event/Thunder_Hit.bnk",
+    "Media": [
+     {
+      "Id": "216933910",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_Hit_02.wav",
+      "Path": "Media/216933910.wem",
+      "CachePath": "F2/{F26D378D-FCC2-1A51-240C-568F04384155}.wem"
+     },
+     {
+      "Id": "584185701",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_Hit_01.wav",
+      "Path": "Media/584185701.wem",
+      "CachePath": "A7/{A7993933-5EED-C4CB-9B86-5B40BB8D467A}.wem"
+     },
+     {
+      "Id": "781940227",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_Hit_03.wav",
+      "Path": "Media/781940227.wem",
+      "CachePath": "A1/{A136826D-80CB-88FD-21CA-819271B6D362}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3561017543",
+      "Name": "Thunder_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Lightning\\Thunder_Hit",
+      "GUID": "{2C5C3770-7A52-4169-AD1C-A5D77D26403E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6666667",
+      "DurationMax": "0.6666667",
+      "MediaRefs": [
+       {
+        "Id": "216933910"
+       },
+       {
+        "Id": "584185701"
+       },
+       {
+        "Id": "781940227"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E2C0E795-214D-C0EF-297B-142299A6D3B3}"
+ }
+}

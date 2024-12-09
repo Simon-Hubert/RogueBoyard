@@ -20,7 +20,7 @@ public:
 	virtual void Resurrect() override;
 
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UAnimationAsset> DeadMontage;
+	TObjectPtr<UAnimMontage> DeadMontage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TObjectPtr<UAnimMontage> ResurectMontage;

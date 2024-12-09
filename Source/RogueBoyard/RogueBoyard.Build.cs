@@ -8,7 +8,7 @@ public class RogueBoyard : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "LocalMultiplayer", "DeveloperSettings", "LevelEditor", "ProceduralMeshComponent", "UnrealEd" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "LocalMultiplayer", "DeveloperSettings", "ProceduralMeshComponent",  "AkAudio" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

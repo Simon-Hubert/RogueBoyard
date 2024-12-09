@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "653261611",
+    "Type": "Event",
+    "GUID": "{BAC9E2FC-C6EF-4644-927A-3F387B2FA1DB}",
+    "Language": "SFX",
+    "Hash": "{EBC8C026-B918-CB5E-4D6B-B21E715C7C03}",
+    "ObjectPath": "Play_Monster_Die",
+    "ShortName": "Play_Monster_Die",
+    "Path": "Event/Play_Monster_Die.bnk",
+    "Media": [
+     {
+      "Id": "99052175",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Spawner_Monster_Dy_02.wav",
+      "Path": "Media/99052175.wem",
+      "CachePath": "85/{85AAAF78-7CAD-2788-0BD6-D7D00ADE725D}.wem"
+     },
+     {
+      "Id": "413738783",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Spawner_Monster_Dy_04.wav",
+      "Path": "Media/413738783.wem",
+      "CachePath": "B2/{B2A9C4E9-E339-9E13-83D1-4EB6D3829AC0}.wem"
+     },
+     {
+      "Id": "469436262",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Spawner_Monster_Dy_01.wav",
+      "Path": "Media/469436262.wem",
+      "CachePath": "54/{54A1FF38-BA34-D00E-F97A-120D6201239A}.wem"
+     },
+     {
+      "Id": "847363504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Spawner_Monster_Dy_03.wav",
+      "Path": "Media/847363504.wem",
+      "CachePath": "54/{54E9B5AB-2E9E-B197-D5FE-325248DA3B66}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "653261611",
+      "Name": "Play_Monster_Die",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\MonsterSpawn\\Play_Monster_Die",
+      "GUID": "{BAC9E2FC-C6EF-4644-927A-3F387B2FA1DB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5289375",
+      "DurationMax": "1.5289375",
+      "MediaRefs": [
+       {
+        "Id": "99052175"
+       },
+       {
+        "Id": "413738783"
+       },
+       {
+        "Id": "469436262"
+       },
+       {
+        "Id": "847363504"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E62181F2-60DE-F1C5-3FFB-D42DD55314A0}"
+ }
+}

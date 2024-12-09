@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3196500978",
+    "Type": "Event",
+    "GUID": "{AB022B6C-A1C8-4AEB-BDE2-CC2402A0E346}",
+    "Language": "SFX",
+    "Hash": "{A507C560-9178-923F-DBA5-AE8271928661}",
+    "ObjectPath": "Play_Lever",
+    "ShortName": "Play_Lever",
+    "Path": "Event/Play_Lever.bnk",
+    "Media": [
+     {
+      "Id": "219461317",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Lever\\SFX_Object_Lever_Use_02.wav",
+      "Path": "Media/219461317.wem",
+      "CachePath": "A7/{A727E88E-0296-B2AD-ABD8-0E934E98AC90}.wem"
+     },
+     {
+      "Id": "323990514",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Lever\\SFX_Object_Lever_Use_01.wav",
+      "Path": "Media/323990514.wem",
+      "CachePath": "64/{646B3632-53A0-D641-53D9-7B538B4B1A97}.wem"
+     },
+     {
+      "Id": "345816517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Lever\\SFX_Object_Lever_Use_04.wav",
+      "Path": "Media/345816517.wem",
+      "CachePath": "8E/{8EE998B2-0098-7AF4-237E-2469E03ABEEB}.wem"
+     },
+     {
+      "Id": "606912581",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Lever\\SFX_Object_Lever_Use_03.wav",
+      "Path": "Media/606912581.wem",
+      "CachePath": "C7/{C7674A46-27F1-A47D-9962-253CCE69F206}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3196500978",
+      "Name": "Play_Lever",
+      "ObjectPath": "\\Events\\Default Work Unit\\Items\\Play_Lever",
+      "GUID": "{AB022B6C-A1C8-4AEB-BDE2-CC2402A0E346}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0332708",
+      "DurationMax": "1.0332708",
+      "MediaRefs": [
+       {
+        "Id": "219461317"
+       },
+       {
+        "Id": "323990514"
+       },
+       {
+        "Id": "345816517"
+       },
+       {
+        "Id": "606912581"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FE5ED012-BFC0-602D-1169-15CF70016D46}"
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2348088332",
+    "Type": "Event",
+    "GUID": "{FCE04957-87BD-4452-8DFE-92A666182E51}",
+    "Language": "SFX",
+    "Hash": "{A7DE38D9-041C-9750-4C0A-0ED57D4270E3}",
+    "ObjectPath": "Play_Despawn",
+    "ShortName": "Play_Despawn",
+    "Path": "Event/Play_Despawn.bnk",
+    "Media": [
+     {
+      "Id": "186524020",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Player_Despawn_02.wav",
+      "Path": "Media/186524020.wem",
+      "CachePath": "D7/{D790E730-30B3-88E8-45CA-6FA12F894A06}.wem"
+     },
+     {
+      "Id": "504620374",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Player_Despawn_01.wav",
+      "Path": "Media/504620374.wem",
+      "CachePath": "E2/{E2A54604-78C2-7690-9304-82C245854EC5}.wem"
+     },
+     {
+      "Id": "786247675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Player_Despawn_03.wav",
+      "Path": "Media/786247675.wem",
+      "CachePath": "53/{53BAD8A6-CC64-394F-1E72-678B6238B8B4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2348088332",
+      "Name": "Play_Despawn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Despawn",
+      "GUID": "{FCE04957-87BD-4452-8DFE-92A666182E51}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8666667",
+      "DurationMax": "1.0092708",
+      "MediaRefs": [
+       {
+        "Id": "186524020"
+       },
+       {
+        "Id": "504620374"
+       },
+       {
+        "Id": "786247675"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8040357C-91DD-7738-7F4C-346586D4937C}"
+ }
+}

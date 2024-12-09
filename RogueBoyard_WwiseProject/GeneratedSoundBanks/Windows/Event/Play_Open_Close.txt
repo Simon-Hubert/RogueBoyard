@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1278297195	Play_Open_Close			\Default Work Unit\Traps\Mimic\Play_Open_Close	
+

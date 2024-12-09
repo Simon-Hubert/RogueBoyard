@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	365318234	Play_Respawn			\Default Work Unit\Voices\Play_Respawn	
+

@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3660042237",
+    "Type": "Event",
+    "GUID": "{B28D7861-B0F8-47B4-9C8E-0FAB176B8301}",
+    "Language": "SFX",
+    "Hash": "{838851C6-FE66-3884-1D06-7BD8EE0B3B94}",
+    "ObjectPath": "Grimoire_Lose",
+    "ShortName": "Grimoire_Lose",
+    "Path": "Event/Grimoire_Lose.bnk",
+    "Media": [
+     {
+      "Id": "87928771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Grimoire\\SFX_Item_Grimoire_Loose_01.wav",
+      "Path": "Media/87928771.wem",
+      "CachePath": "F8/{F8A7C092-D34C-F87D-0C0F-98BD46E65236}.wem"
+     },
+     {
+      "Id": "232461502",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Grimoire\\SFX_Item_Grimoire_Loose_03.wav",
+      "Path": "Media/232461502.wem",
+      "CachePath": "C5/{C53FCD29-CB75-38C8-8E1E-EAEE7381DCDF}.wem"
+     },
+     {
+      "Id": "695043523",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Grimoire\\SFX_Item_Grimoire_Loose_02.wav",
+      "Path": "Media/695043523.wem",
+      "CachePath": "41/{41E2CEC3-C1BE-DF8B-AF2D-1D9D5FE6D804}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3660042237",
+      "Name": "Grimoire_Lose",
+      "ObjectPath": "\\Events\\Default Work Unit\\Interactables\\Grimoire_Lose",
+      "GUID": "{B28D7861-B0F8-47B4-9C8E-0FAB176B8301}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2745833",
+      "DurationMax": "1.3872917",
+      "MediaRefs": [
+       {
+        "Id": "87928771"
+       },
+       {
+        "Id": "232461502"
+       },
+       {
+        "Id": "695043523"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EA673A94-9208-F153-9728-9AD68757A96D}"
+ }
+}

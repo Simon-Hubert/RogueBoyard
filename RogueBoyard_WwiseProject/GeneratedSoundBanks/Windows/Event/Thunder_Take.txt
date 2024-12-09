@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2148989521	Thunder_Take			\Default Work Unit\Traps\Lightning\Thunder_Take	
+

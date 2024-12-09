@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1904412443",
+    "Type": "Event",
+    "GUID": "{C4FDF37F-4098-4060-B86C-C62DAA518364}",
+    "Language": "SFX",
+    "Hash": "{988F1E86-FB47-500A-B2B0-892FA568EA7D}",
+    "ObjectPath": "Stop_Flamethrower_Loop",
+    "ShortName": "Stop_Flamethrower_Loop",
+    "Path": "Event/Stop_Flamethrower_Loop.bnk",
+    "Events": [
+     {
+      "Id": "1904412443",
+      "Name": "Stop_Flamethrower_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Flamethrower\\Stop_Flamethrower_Loop",
+      "GUID": "{C4FDF37F-4098-4060-B86C-C62DAA518364}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B3018A61-F88F-BF8E-F05B-696ADBC86B7A}"
+ }
+}

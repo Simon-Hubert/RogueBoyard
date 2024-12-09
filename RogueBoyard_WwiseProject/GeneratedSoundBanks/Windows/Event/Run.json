@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "712161704",
+    "Type": "Event",
+    "GUID": "{B0932EEC-189C-4675-8D00-EC577905B1EC}",
+    "Language": "SFX",
+    "Hash": "{7F553017-3BAB-C002-2150-CC15F148DED8}",
+    "ObjectPath": "Run",
+    "ShortName": "Run",
+    "Path": "Event/Run.bnk",
+    "Media": [
+     {
+      "Id": "19530064",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Run\\MC_FOL_Presence_Run_03.wav",
+      "Path": "Media/19530064.wem",
+      "CachePath": "2D/{2D38A1E6-6B2D-7145-5B87-87A1F081F075}.wem"
+     },
+     {
+      "Id": "300028872",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Run\\MC_FOL_Presence_Run_01.wav",
+      "Path": "Media/300028872.wem",
+      "CachePath": "EF/{EF5A6145-C365-CA8D-E4F8-31BDEB0C802B}.wem"
+     },
+     {
+      "Id": "347723233",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Run\\MC_FOL_Presence_Run_04.wav",
+      "Path": "Media/347723233.wem",
+      "CachePath": "DB/{DB05E418-1893-8D9A-3297-C779069C68AE}.wem"
+     },
+     {
+      "Id": "793016751",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Run\\MC_FOL_Presence_Run_05.wav",
+      "Path": "Media/793016751.wem",
+      "CachePath": "8E/{8E813E21-DA07-44F2-E86B-1778AB7921D0}.wem"
+     },
+     {
+      "Id": "906466482",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Run\\MC_FOL_Presence_Run_02.wav",
+      "Path": "Media/906466482.wem",
+      "CachePath": "27/{27174669-2A8E-5173-0565-A18A3352F646}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "712161704",
+      "Name": "Run",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Foley\\Run",
+      "GUID": "{B0932EEC-189C-4675-8D00-EC577905B1EC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.37860417",
+      "DurationMax": "0.45866665",
+      "MediaRefs": [
+       {
+        "Id": "19530064"
+       },
+       {
+        "Id": "300028872"
+       },
+       {
+        "Id": "347723233"
+       },
+       {
+        "Id": "793016751"
+       },
+       {
+        "Id": "906466482"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{05BA2176-E80C-D1EB-F939-8A9C3375C85A}"
+ }
+}

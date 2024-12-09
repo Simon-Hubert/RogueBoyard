@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3484030910	Play_TrapDoor_Open			\Default Work Unit\Traps\TrapDoor\Play_TrapDoor_Open	
+

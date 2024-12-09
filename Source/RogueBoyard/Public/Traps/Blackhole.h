@@ -29,4 +29,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float AttractionForce;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MAXAttractionForce;
 };

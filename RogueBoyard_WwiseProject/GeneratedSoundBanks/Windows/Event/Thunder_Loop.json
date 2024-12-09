@@ -1,0 +1,70 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2424852986",
+    "Type": "Event",
+    "GUID": "{87BE622C-9976-46BD-B9B8-7BC8A3A7B6B0}",
+    "Language": "SFX",
+    "Hash": "{7A1870C5-64A8-8969-5A84-850FE729F2EF}",
+    "ObjectPath": "Thunder_Loop",
+    "ShortName": "Thunder_Loop",
+    "Path": "Event/Thunder_Loop.bnk",
+    "Media": [
+     {
+      "Id": "560043581",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_LP_01.wav",
+      "Path": "Media/560043581.wem",
+      "CachePath": "73/{736404A2-75A1-3B85-B6EC-884425715FA4}.wem"
+     },
+     {
+      "Id": "630471321",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_LP_03.wav",
+      "Path": "Media/630471321.wem",
+      "CachePath": "43/{43ED78FB-BDC5-2895-1029-0061E1BE8A37}.wem"
+     },
+     {
+      "Id": "833963335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Lightning\\SFX_Trap_Lightning_LP_02.wav",
+      "Path": "Media/833963335.wem",
+      "CachePath": "8C/{8C5C91D4-2E46-F80E-231E-8F3169842026}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2424852986",
+      "Name": "Thunder_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Lightning\\Thunder_Loop",
+      "GUID": "{87BE622C-9976-46BD-B9B8-7BC8A3A7B6B0}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "560043581"
+       },
+       {
+        "Id": "630471321"
+       },
+       {
+        "Id": "833963335"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{142FC022-C556-372B-0D59-134D5CA8AE01}"
+ }
+}

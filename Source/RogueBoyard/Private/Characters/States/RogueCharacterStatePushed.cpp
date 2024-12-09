@@ -3,6 +3,7 @@
 
 #include "Characters/States/RogueCharacterStatePushed.h"
 
+#include "AkGameplayStatics.h"
 #include "Characters/RogueCharacter.h"
 #include "Characters/RogueCharacterStateMachine.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -17,6 +18,13 @@ void URogueCharacterStatePushed::StateEnter(ERogueCharacterStateID PreviousState
 	Super::StateEnter(PreviousStateID);
 	Character->OnCharacterPushedEvent.Broadcast();
 	Character->GetMesh()->PlayAnimation(PushedMontage, false);
+	const FOnAkPostEventCallback NullCallBack;
+	UAkGameplayStatics::PostEvent(
+		VoiceEvent,
+		nullptr,
+		0,
+		NullCallBack,
+		false);
 }
 
 void URogueCharacterStatePushed::StateExit(ERogueCharacterStateID NextStateID)

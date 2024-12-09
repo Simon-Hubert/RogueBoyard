@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2108779966	Walk			\Default Work Unit\MainEvents\Foley\Walk	
+

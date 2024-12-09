@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3467119565",
+    "Type": "Event",
+    "GUID": "{9A4CFC9D-7608-4098-8E29-E52A966294A2}",
+    "Language": "SFX",
+    "Hash": "{A2DA7F4F-6B0F-0763-2072-62F9A997671F}",
+    "ObjectPath": "Play_Flamethrower_Start",
+    "ShortName": "Play_Flamethrower_Start",
+    "Path": "Event/Play_Flamethrower_Start.bnk",
+    "Media": [
+     {
+      "Id": "381480323",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_Start_01.wav",
+      "Path": "Media/381480323.wem",
+      "CachePath": "7D/{7DB9381A-B977-6461-D909-308CBA7DB9FB}.wem"
+     },
+     {
+      "Id": "457816805",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_Start_03.wav",
+      "Path": "Media/457816805.wem",
+      "CachePath": "D6/{D6F75F5E-53B6-19FB-80F4-204CC6D38E11}.wem"
+     },
+     {
+      "Id": "685020824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_Start_04.wav",
+      "Path": "Media/685020824.wem",
+      "CachePath": "14/{147A09AA-D6DD-F816-35BB-3A47F4181DBA}.wem"
+     },
+     {
+      "Id": "826208915",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Trap_Flamethrower_Start_02.wav",
+      "Path": "Media/826208915.wem",
+      "CachePath": "5F/{5FD3D7DD-B68D-B062-4B10-2D53BBDDE149}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3467119565",
+      "Name": "Play_Flamethrower_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Flamethrower\\Play_Flamethrower_Start",
+      "GUID": "{9A4CFC9D-7608-4098-8E29-E52A966294A2}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0326042",
+      "DurationMax": "1.0387917",
+      "MediaRefs": [
+       {
+        "Id": "381480323"
+       },
+       {
+        "Id": "457816805"
+       },
+       {
+        "Id": "685020824"
+       },
+       {
+        "Id": "826208915"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AFEAAC54-3A7F-27D1-DB44-B1D3D38D4C65}"
+ }
+}

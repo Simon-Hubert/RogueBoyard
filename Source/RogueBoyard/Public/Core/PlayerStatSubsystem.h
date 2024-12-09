@@ -16,6 +16,12 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	TArray<int> GetPlayerPurses() const;
+
+	UFUNCTION(BlueprintCallable)
+	TArray<int> GetPlayerBalance() const;
+
+	UFUNCTION(BlueprintCallable)
+	void ResetPlayerBalance();
 	
 
 private:
@@ -26,4 +32,7 @@ private:
 	
 	UPROPERTY()
 	TArray<int> PlayerIndexes = {0,1,2,3};
+
+	UPROPERTY()
+	TArray<int> PlayerBalanceThisCycle = {0,0,0,0};
 };

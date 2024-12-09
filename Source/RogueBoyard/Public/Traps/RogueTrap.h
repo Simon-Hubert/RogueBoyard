@@ -69,6 +69,18 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "Active Trap"))
 	void ReceiveActiveTrap();
 
+	UFUNCTION(BlueprintCallable)
+	virtual void Init();
+	
+	UFUNCTION(BlueprintImplementableEvent, meta=(DisplayName="Init"))
+	void ReceiveInit();
+
+	UFUNCTION(BlueprintCallable)
+	virtual void End();
+	
+	UFUNCTION(BlueprintImplementableEvent, meta=(DisplayName="End"))
+	void ReceiveEnd();
+
 private:
 	//Rotation
 	float CurrentRotationSpeed;

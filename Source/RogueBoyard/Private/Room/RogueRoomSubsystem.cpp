@@ -75,7 +75,7 @@ void URogueRoomSubsystem::LoadRoomAtPosition(const TSoftObjectPtr<UWorld>& Room,
 }
 
 void URogueRoomSubsystem::UnloadRoom(ULevelStreamingDynamic* Room) {
-	LoadedRooms.Remove(Room);
+	//LoadedRooms.Remove(Room);
 	Room->SetShouldBeLoaded(false);
 }
 
@@ -115,7 +115,7 @@ void URogueRoomSubsystem::RoomLoadedCallback(ERoomLoaded Context)
 }
 
 void URogueRoomSubsystem::UnloadPreviousRoom() {
-	if(LoadedRooms[0]) {
-		UnloadRoom(LoadedRooms[0]);
+	if(ActiveRoomId > 0 && ActiveRoomId < LoadedRooms.Num()) {
+		UnloadRoom(LoadedRooms[ActiveRoomId-1]);
 	}
 }

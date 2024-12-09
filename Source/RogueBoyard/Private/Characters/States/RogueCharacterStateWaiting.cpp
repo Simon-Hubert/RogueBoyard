@@ -2,6 +2,8 @@
 
 
 #include "Characters/States/RogueCharacterStateWaiting.h"
+#include "Characters/RogueCharacter.h"
+#include "Characters/RogueCharacterStateMachine.h"
 
 
 ERogueCharacterStateID URogueCharacterStateWaiting::GetStateID()
@@ -18,3 +20,4 @@ void URogueCharacterStateWaiting::StateExit(ERogueCharacterStateID NextStateID)
 {
 	Super::StateExit(NextStateID);
 }
+

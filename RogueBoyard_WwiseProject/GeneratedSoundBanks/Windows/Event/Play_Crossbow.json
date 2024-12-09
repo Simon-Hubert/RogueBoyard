@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4285763406",
+    "Type": "Event",
+    "GUID": "{BD24F637-F2A4-4468-96C0-24F8E270D4CF}",
+    "Language": "SFX",
+    "Hash": "{B6050955-0291-3140-942D-2FD33D61719C}",
+    "ObjectPath": "Play_Crossbow",
+    "ShortName": "Play_Crossbow",
+    "Path": "Event/Play_Crossbow.bnk",
+    "Media": [
+     {
+      "Id": "312793435",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\Crossbow\\SFX_Trap_Crossbow_Activation_02.wav",
+      "Path": "Media/312793435.wem",
+      "CachePath": "1E/{1E3A7C9E-8535-B0B2-8BB8-02952B7382BB}.wem"
+     },
+     {
+      "Id": "448519868",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\Crossbow\\SFX_Trap_Crossbow_Activation_01.wav",
+      "Path": "Media/448519868.wem",
+      "CachePath": "45/{453918D4-5704-2E1F-E669-7DBFADB55F68}.wem"
+     },
+     {
+      "Id": "634652922",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\Crossbow\\SFX_Trap_Crossbow_Activation_03.wav",
+      "Path": "Media/634652922.wem",
+      "CachePath": "60/{60F12A0D-A2EC-6BC1-E4A2-9B0E05B48316}.wem"
+     },
+     {
+      "Id": "694904319",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\Crossbow\\SFX_Trap_Crossbow_Activation_04.wav",
+      "Path": "Media/694904319.wem",
+      "CachePath": "34/{3408AF9C-623B-AD0D-41BC-4C1ADA68B907}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4285763406",
+      "Name": "Play_Crossbow",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Crossbow\\Play_Crossbow",
+      "GUID": "{BD24F637-F2A4-4468-96C0-24F8E270D4CF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.63805896",
+      "DurationMax": "0.7161971",
+      "MediaRefs": [
+       {
+        "Id": "312793435"
+       },
+       {
+        "Id": "448519868"
+       },
+       {
+        "Id": "634652922"
+       },
+       {
+        "Id": "694904319"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C1E095C4-DA2C-516D-D7F9-265EEFB88A7A}"
+ }
+}

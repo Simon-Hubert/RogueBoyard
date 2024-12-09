@@ -10,15 +10,21 @@ ARogueGrimoire::ARogueGrimoire()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+void ARogueGrimoire::Init() {
+	ReceiveInit();
+}
+
 void ARogueGrimoire::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	SwitchOwner(nullptr);
 }
 
 void ARogueGrimoire::SwitchOwner(ARogueCharacter* NewOwner)
 {
 	CurrentOwner = NewOwner;
-	if(NewOwner) {
+	if(NewOwner != nullptr) {
 		LastOwner = NewOwner;
 	}
 	OnGrimoireChangedOwnerEvent.Broadcast();
@@ -34,8 +40,9 @@ void ARogueGrimoire::ComputeConstants()
 void ARogueGrimoire::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if(CurrentOwner)
+	if(CurrentOwner != nullptr)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("ARogueGrimoire::Tick"));
 		ComputeConstants();
 		const FVector Input = CurrentOwner->GetActorLocation();
 		const FVector InputVelocity = (Input - LastInputPos)/DeltaTime;

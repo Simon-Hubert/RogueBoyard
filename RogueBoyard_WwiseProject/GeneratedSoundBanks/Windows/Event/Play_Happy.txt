@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3748496336	Play_Happy			\Default Work Unit\Voices\Play_Happy	
+

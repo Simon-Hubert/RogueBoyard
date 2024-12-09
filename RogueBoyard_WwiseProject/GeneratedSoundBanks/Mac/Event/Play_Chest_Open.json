@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2560700912",
+    "Type": "Event",
+    "GUID": "{79D2DCF8-51BE-4A34-95ED-647B5C0BCD2A}",
+    "Language": "SFX",
+    "Hash": "{E75C95F6-A683-2F11-CA70-7E09F70C1FF8}",
+    "ObjectPath": "Play_Chest_Open",
+    "ShortName": "Play_Chest_Open",
+    "Path": "Event/Play_Chest_Open.bnk",
+    "Media": [
+     {
+      "Id": "254736372",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Chest\\Open\\SFX_Chest_Open_06.wav",
+      "Path": "Media/254736372.wem",
+      "CachePath": "F7/{F77CB2DB-2A4D-DF18-B9B4-252BF5FEA8DF}.wem"
+     },
+     {
+      "Id": "709251367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Chest\\Open\\SFX_Chest_Open_04.wav",
+      "Path": "Media/709251367.wem",
+      "CachePath": "1A/{1A962BF2-AFC9-2A2C-D8CE-E14566623DF2}.wem"
+     },
+     {
+      "Id": "775790121",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Chest\\Open\\SFX_Chest_Open_03.wav",
+      "Path": "Media/775790121.wem",
+      "CachePath": "AB/{ABA91941-4B5B-C234-01AF-3FEE77BE8E8E}.wem"
+     },
+     {
+      "Id": "778928886",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Chest\\Open\\SFX_Chest_Open_05.wav",
+      "Path": "Media/778928886.wem",
+      "CachePath": "95/{958C33D9-D0DF-454E-6CE0-5BC4451559F4}.wem"
+     },
+     {
+      "Id": "885952980",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Chest\\Open\\SFX_Chest_Open_01.wav",
+      "Path": "Media/885952980.wem",
+      "CachePath": "4A/{4A5C7E7C-4397-4EB3-D470-C2E8E904AE37}.wem"
+     },
+     {
+      "Id": "962896493",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Objects\\Chest\\Open\\SFX_Chest_Open_02.wav",
+      "Path": "Media/962896493.wem",
+      "CachePath": "E8/{E87C540A-1DC0-E2FE-1BDF-705F3FDB2A54}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2560700912",
+      "Name": "Play_Chest_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Items\\Play_Chest_Open",
+      "GUID": "{79D2DCF8-51BE-4A34-95ED-647B5C0BCD2A}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0333333",
+      "DurationMax": "1.0386875",
+      "MediaRefs": [
+       {
+        "Id": "254736372"
+       },
+       {
+        "Id": "709251367"
+       },
+       {
+        "Id": "775790121"
+       },
+       {
+        "Id": "778928886"
+       },
+       {
+        "Id": "885952980"
+       },
+       {
+        "Id": "962896493"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5FDFA302-878C-C175-A98A-AFE7FDDE5964}"
+ }
+}

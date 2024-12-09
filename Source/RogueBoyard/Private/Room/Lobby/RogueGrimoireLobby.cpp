@@ -1,12 +1,12 @@
 ﻿#include "Room/Lobby/RogueGrimoireLobby.h"
 
 #include "Characters/RogueCharacter.h"
+#include "Core/RogueGameMode.h"
 #include "Room/Lobby/RogueGrimoire.h"
 
 ARogueGrimoireLobby::ARogueGrimoireLobby()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	GrimoireSpawnPoint = CreateDefaultSubobject<USceneComponent>("GrimoireSpawnPoint");
 }
 
 void ARogueGrimoireLobby::BeginPlay()
@@ -21,13 +21,18 @@ void ARogueGrimoireLobby::Tick(float DeltaTime)
 
 void ARogueGrimoireLobby::BeginRoom()
 {
-	Grimoire->SetActorLocation(GrimoireSpawnPoint->GetComponentLocation());
 	Super::BeginRoom();
+	Grimoire->LastInputPos = Grimoire->GetActorLocation();
+	Grimoire->DefaultPos = Grimoire->GetActorLocation();
 }
 
 void ARogueGrimoireLobby::EndRoom()
 {
 	ChosenPlayer = 	Grimoire->GetCurrentOwner()->PlayerIndex;
+	if(!ChosenPlayer)
+	{
+		ChosenPlayer = Cast<ARogueGameMode>(GetWorld()->GetAuthGameMode())->GetRandomCharacter()->PlayerIndex;
+	}
 
 	Super::EndRoom();
 }

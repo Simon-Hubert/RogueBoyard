@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2281287634",
+    "Type": "Event",
+    "GUID": "{A4CA03EC-D97B-448A-8582-C0AAAD179008}",
+    "Language": "SFX",
+    "Hash": "{79048530-C102-9519-1618-CDD67C8B71E5}",
+    "ObjectPath": "Play_Open",
+    "ShortName": "Play_Open",
+    "Path": "Event/Play_Open.bnk",
+    "Media": [
+     {
+      "Id": "114737265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Open\\SFX_Trap_BearTrap_Open_04.wav",
+      "Path": "Media/114737265.wem",
+      "CachePath": "3B/{3BE9043D-08B0-F70E-6997-5CFA67C94CFE}.wem"
+     },
+     {
+      "Id": "439533975",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Open\\SFX_Trap_BearTrap_Open_02.wav",
+      "Path": "Media/439533975.wem",
+      "CachePath": "0F/{0F5446D0-112E-E238-0F94-F746CC6D3E83}.wem"
+     },
+     {
+      "Id": "697102709",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Open\\SFX_Trap_BearTrap_Open_01.wav",
+      "Path": "Media/697102709.wem",
+      "CachePath": "0F/{0FC13189-BE12-3DE3-2EC3-443122E6F12C}.wem"
+     },
+     {
+      "Id": "858641734",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Open\\SFX_Trap_BearTrap_Open_03.wav",
+      "Path": "Media/858641734.wem",
+      "CachePath": "D1/{D17A4BFF-E4D4-3779-BF77-C7057BBC766D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2281287634",
+      "Name": "Play_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\BearTrap\\Play_Open",
+      "GUID": "{A4CA03EC-D97B-448A-8582-C0AAAD179008}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0337917",
+      "DurationMax": "1.163875",
+      "MediaRefs": [
+       {
+        "Id": "114737265"
+       },
+       {
+        "Id": "439533975"
+       },
+       {
+        "Id": "697102709"
+       },
+       {
+        "Id": "858641734"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9BF76676-7031-1348-859D-122B03B6189D}"
+ }
+}

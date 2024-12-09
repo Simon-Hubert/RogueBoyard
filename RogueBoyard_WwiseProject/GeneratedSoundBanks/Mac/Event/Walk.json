@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2108779966",
+    "Type": "Event",
+    "GUID": "{79AB701E-D59F-49DC-A665-B66EF37BCBCB}",
+    "Language": "SFX",
+    "Hash": "{2C15B69D-184D-150F-63F5-AF4658A4C366}",
+    "ObjectPath": "Walk",
+    "ShortName": "Walk",
+    "Path": "Event/Walk.bnk",
+    "Media": [
+     {
+      "Id": "117118826",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Walk\\MC_FOL_Presence_Walk_03.wav",
+      "Path": "Media/117118826.wem",
+      "CachePath": "78/{787A74EF-F9E7-6439-6AF9-34EE53323AA0}.wem"
+     },
+     {
+      "Id": "451149365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Walk\\MC_FOL_Presence_Walk_02.wav",
+      "Path": "Media/451149365.wem",
+      "CachePath": "BC/{BC6503BE-D274-4516-4D91-0E2B943149BF}.wem"
+     },
+     {
+      "Id": "832017014",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Walk\\MC_FOL_Presence_Walk_05.wav",
+      "Path": "Media/832017014.wem",
+      "CachePath": "4B/{4B586804-9766-86A4-1684-E95B1BF14A2C}.wem"
+     },
+     {
+      "Id": "951472780",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Walk\\MC_FOL_Presence_Walk_01.wav",
+      "Path": "Media/951472780.wem",
+      "CachePath": "4A/{4A52154D-0B57-A065-4D06-67171B0F3F86}.wem"
+     },
+     {
+      "Id": "1042952319",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\Foley\\Walk\\MC_FOL_Presence_Walk_04.wav",
+      "Path": "Media/1042952319.wem",
+      "CachePath": "FE/{FE2153FB-BC6D-08E9-F48E-C12893425C6D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2108779966",
+      "Name": "Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\MainEvents\\Foley\\Walk",
+      "GUID": "{79AB701E-D59F-49DC-A665-B66EF37BCBCB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.45704168",
+      "DurationMax": "0.45704168",
+      "MediaRefs": [
+       {
+        "Id": "117118826"
+       },
+       {
+        "Id": "451149365"
+       },
+       {
+        "Id": "832017014"
+       },
+       {
+        "Id": "951472780"
+       },
+       {
+        "Id": "1042952319"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{299BD352-F6EC-C13C-CE77-DF8B29C49ECC}"
+ }
+}

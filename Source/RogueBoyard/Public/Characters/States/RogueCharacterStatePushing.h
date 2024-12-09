@@ -27,11 +27,17 @@ public:
 	bool Pushing(TArray<AActor*> Actors, float PushForce);
 
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UAnimSequenceBase> StartAttack;
+	TObjectPtr<UAnimMontage> StartAttack;
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UAnimSequenceBase> ChargingAttack;
+	TObjectPtr<UAnimMontage> RunStartAttack;
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UAnimSequenceBase> Attacking;
+	TObjectPtr<UAnimMontage> ChargingAttack;
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UAnimMontage> RunChargingAttack;
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UAnimMontage> Attacking;
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UAnimMontage> RunAttacking;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	float MinForce;

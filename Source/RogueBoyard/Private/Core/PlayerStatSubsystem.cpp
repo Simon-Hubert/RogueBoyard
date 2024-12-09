@@ -19,11 +19,20 @@ TArray<int> UPlayerStatSubsystem::GetPlayerPurses() const {
 	return PlayerPurses;
 }
 
+TArray<int> UPlayerStatSubsystem::GetPlayerBalance() const {
+	return PlayerBalanceThisCycle;
+}
+
+void UPlayerStatSubsystem::ResetPlayerBalance() {
+	PlayerBalanceThisCycle = {0, 0, 0, 0};
+}
+
 void UPlayerStatSubsystem::BindUpdateMoney(URoguePurse* Purse, const int& PlayerIndex) {
 	auto OnMoneyUpdated = [&](int Amount)
 	{
+		PlayerBalanceThisCycle[PlayerIndex] += Amount - PlayerPurses[PlayerIndex] ;
 		PlayerPurses[PlayerIndex] = Amount;
-		UE_LOG(LogTemp, Warning, TEXT("MyLambdaTest"));
+		//UE_LOG(LogTemp, Warning, TEXT("MyLambdaTest"));
 	};
 	Purse->OnUpdatedMoneyEvent.AddLambda(OnMoneyUpdated);
 }

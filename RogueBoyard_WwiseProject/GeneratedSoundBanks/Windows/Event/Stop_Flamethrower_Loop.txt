@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1904412443	Stop_Flamethrower_Loop			\Default Work Unit\Traps\Flamethrower\Stop_Flamethrower_Loop	
+

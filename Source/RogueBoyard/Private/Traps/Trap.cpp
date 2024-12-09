@@ -11,6 +11,7 @@ ATrap::ATrap()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+
 // Called when the game starts or when spawned
 void ATrap::BeginPlay()
 {

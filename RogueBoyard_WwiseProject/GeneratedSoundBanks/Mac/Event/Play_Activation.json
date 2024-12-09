@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2931300058",
+    "Type": "Event",
+    "GUID": "{D21A1995-1689-42DC-AF7A-FB3E9CC634A7}",
+    "Language": "SFX",
+    "Hash": "{76383055-29DB-EB54-F51E-CF2C780092AF}",
+    "ObjectPath": "Play_Activation",
+    "ShortName": "Play_Activation",
+    "Path": "Event/Play_Activation.bnk",
+    "Media": [
+     {
+      "Id": "70903163",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Activation\\SFX_Trap_BearTrap_Activation_03.wav",
+      "Path": "Media/70903163.wem",
+      "CachePath": "08/{08E838FF-64B4-89DE-A146-2DECAA01B9CC}.wem"
+     },
+     {
+      "Id": "526470401",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Activation\\SFX_Trap_BearTrap_Activation_01.wav",
+      "Path": "Media/526470401.wem",
+      "CachePath": "3E/{3E6EFBE2-6314-17C1-FD6D-A711DD19E918}.wem"
+     },
+     {
+      "Id": "596935932",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Activation\\SFX_Trap_BearTrap_Activation_02.wav",
+      "Path": "Media/596935932.wem",
+      "CachePath": "64/{645FC90E-4F0E-1068-E517-63025EDA5A0F}.wem"
+     },
+     {
+      "Id": "865231574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BearTrap\\Activation\\SFX_Trap_BearTrap_Activation_04.wav",
+      "Path": "Media/865231574.wem",
+      "CachePath": "BE/{BE4F9A04-4594-1670-8539-9AC3E69700A2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2931300058",
+      "Name": "Play_Activation",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\BearTrap\\Play_Activation",
+      "GUID": "{D21A1995-1689-42DC-AF7A-FB3E9CC634A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.47391668",
+      "DurationMax": "0.66054165",
+      "MediaRefs": [
+       {
+        "Id": "70903163"
+       },
+       {
+        "Id": "526470401"
+       },
+       {
+        "Id": "596935932"
+       },
+       {
+        "Id": "865231574"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{76F711C0-3E89-481F-B5BE-2DEC03A244C0}"
+ }
+}

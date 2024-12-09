@@ -19,11 +19,4 @@ protected:
 
 public:
 	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(EditAnywhere)
-	UAnimMontage* OpeningTrapMontage;
-
-	USkeletalMeshComponent* OpeningTrapMesh;
-	UPROPERTY(EditAnywhere)
-	UAnimMontage* ClosingTrapMontage;
 };

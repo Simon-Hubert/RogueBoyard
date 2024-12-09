@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4238880044",
+    "Type": "Event",
+    "GUID": "{1250892E-4544-4D4A-ACC9-745820209A30}",
+    "Language": "SFX",
+    "Hash": "{1E9CD59C-6ACF-4676-5DAA-07313301B51B}",
+    "ObjectPath": "Play_Player_Respawn",
+    "ShortName": "Play_Player_Respawn",
+    "Path": "Event/Play_Player_Respawn.bnk",
+    "Media": [
+     {
+      "Id": "207951569",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Player_Respawn_01.wav",
+      "Path": "Media/207951569.wem",
+      "CachePath": "EF/{EFA3BFBC-260A-F227-6F7E-B4B8DCB601F1}.wem"
+     },
+     {
+      "Id": "967982221",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Player_Respawn_03.wav",
+      "Path": "Media/967982221.wem",
+      "CachePath": "38/{38D47E5F-819C-B0AF-F55D-0A3AB2F9CCE3}.wem"
+     },
+     {
+      "Id": "1013417187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Player_Respawn_02.wav",
+      "Path": "Media/1013417187.wem",
+      "CachePath": "A4/{A4D27352-79FB-A275-35CF-B9B088A86146}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4238880044",
+      "Name": "Play_Player_Respawn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Player_Respawn",
+      "GUID": "{1250892E-4544-4D4A-ACC9-745820209A30}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3",
+      "DurationMax": "1.4318125",
+      "MediaRefs": [
+       {
+        "Id": "207951569"
+       },
+       {
+        "Id": "967982221"
+       },
+       {
+        "Id": "1013417187"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9BC3C983-3062-037F-7593-1EAE5A8648D0}"
+ }
+}

@@ -29,6 +29,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	ACameraActor* RoomCamera = nullptr;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	ACameraActor* RoomCameraZoomMax = nullptr;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	ACameraActor* RoomCameraZoomMin = nullptr;
+	
 	virtual void Tick(float DeltaTime) override;
 	
 	UFUNCTION(BlueprintCallable)
@@ -74,11 +80,15 @@ protected:
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<ARogueDoor> ExitDoor;
 	
-private:	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	float MaxRoomTime = 120.0f;
+
+	bool bBeginThePlay = true;
 	
+private:
+
 	bool bHasRoomStarted = false;
 	bool bHasRoomEnded = false;
 	
-	UPROPERTY(EditAnywhere)
-	float MaxRoomTime = 120.0f;
+
 };

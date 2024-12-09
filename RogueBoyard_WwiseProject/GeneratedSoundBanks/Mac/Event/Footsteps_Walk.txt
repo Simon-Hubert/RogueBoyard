@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1780308710	Footsteps_Walk			\Default Work Unit\MainEvents\Footsteps\Footsteps_Walk	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2000241759	FootstepsGround			\Default Work Unit\FootstepsGround	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	FootstepsGround			
+	2058049674	Wood	FootstepsGround			
+	2412606308	Carpet	FootstepsGround			
+

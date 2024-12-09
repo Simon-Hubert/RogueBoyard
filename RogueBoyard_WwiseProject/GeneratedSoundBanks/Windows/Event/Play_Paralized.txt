@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1687242994	Play_Paralized			\Default Work Unit\Voices\Play_Paralized	
+

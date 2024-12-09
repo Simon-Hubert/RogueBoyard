@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1944958466	Play_ItemTake			\Default Work Unit\Player\Play_ItemTake	
+

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2678795488",
+    "Type": "Event",
+    "GUID": "{DA726D1A-46FC-4D09-8C18-FD983F14BC40}",
+    "Language": "SFX",
+    "Hash": "{79F4D55E-F5FF-5EC4-98C2-FB8C5EA47F16}",
+    "ObjectPath": "Play_BadCoin",
+    "ShortName": "Play_BadCoin",
+    "Path": "Event/Play_BadCoin.bnk",
+    "Media": [
+     {
+      "Id": "404845405",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SD\\SFX\\Traps\\BadCoin\\SFX_Trap_BadCoins_Take_01.wav",
+      "Path": "Media/404845405.wem",
+      "CachePath": "E1/{E14740CC-573E-16E1-3B26-750288DCFDE6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2678795488",
+      "Name": "Play_BadCoin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\BadCoin\\Play_BadCoin",
+      "GUID": "{DA726D1A-46FC-4D09-8C18-FD983F14BC40}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.93333334",
+      "DurationMax": "0.93333334",
+      "MediaRefs": [
+       {
+        "Id": "404845405"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{48E538C4-FFBA-3366-BE57-A9B57F092857}"
+ }
+}

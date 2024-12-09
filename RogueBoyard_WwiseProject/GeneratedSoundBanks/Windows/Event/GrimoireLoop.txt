@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2688936153	GrimoireLoop			\Default Work Unit\Interactables\GrimoireLoop	
+

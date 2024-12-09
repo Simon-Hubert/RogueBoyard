@@ -3,6 +3,7 @@
 
 #include "Characters/States/RogueCharacterStateFall.h"
 
+#include "Camera/CameraWorldSubsystem.h"
 #include "Characters/RogueCharacter.h"
 #include "Characters/RogueCharacterStateMachine.h"
 
@@ -14,8 +15,9 @@ ERogueCharacterStateID URogueCharacterStateFall::GetStateID()
 void URogueCharacterStateFall::StateEnter(ERogueCharacterStateID PreviousStateID)
 {
 	Super::StateEnter(PreviousStateID);
-	Character->GetMesh()->PlayAnimation(FallMontage, true);
+	Character->PlayAnimMontage(FallMontage, true);
 	Character->GetMesh()->SetWorldRotation(FRotator(0, 0, -90));
+	GetWorld()->GetSubsystem<UCameraWorldSubsystem>()->RemoveFollowTarget(Character);
 }
 
 void URogueCharacterStateFall::StateExit(ERogueCharacterStateID NextStateID)
@@ -24,3 +26,4 @@ void URogueCharacterStateFall::StateExit(ERogueCharacterStateID NextStateID)
 	FRotator rotator = Character->GetMesh()->GetRelativeRotation();
 	Character->GetMesh()->SetWorldRotation(FRotator(0, 0, 0));
 }
+
