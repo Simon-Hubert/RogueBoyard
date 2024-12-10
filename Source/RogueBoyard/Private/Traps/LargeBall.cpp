@@ -3,89 +3,138 @@
 
 #include "Traps/LargeBall.h"
 
+#include "Kismet/KismetMathLibrary.h"
 
-// Sets default values
+
 ALargeBall::ALargeBall()
 {
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	BallMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BallMesh"));
+	RootComponent = BallMesh;
+	MoveDelayTime = 1.0f;
 }
 
-// Called when the game starts or when spawned
+
 void ALargeBall::BeginPlay()
 {
 	Super::BeginPlay();
-	TargetPos = Ball->GetComponentLocation();
+	FVector BoxExtent;
+	BallMesh->GetLocalBounds(BoxExtent, BoxExtent);
+	BallRadius = BoxExtent.Size();
+	CurrentWaypointIndex = 0;
+	CurrentState = ELargeBallState::WaitForUserInputs;
 }
 
 
-
-// Called every frame
 void ALargeBall::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	HandleJoystickInput();
-	MoveTowardsTarget(DeltaTime,TargetPos);
-}
 
-void ALargeBall::MoveTowardsTarget(float DeltaTime, FVector TargetLocation)
-{
-	FVector Direction = (TargetLocation - Ball->GetComponentLocation()).GetSafeNormal();
-	float Distance = (TargetLocation - Ball->GetComponentLocation()).Size();
-	if (Distance <= Tolerance)
+	switch (CurrentState)
 	{
-		Ball->SetWorldLocation(TargetLocation);
-		
-		bArrived = true;
-	}
-	else
-	{
-		FVector Displacement = Direction * MoveSpeed * DeltaTime;
-		FVector NewPosition = Ball->GetComponentLocation() + Displacement;
-		Ball->SetWorldLocation(NewPosition);
+	case ELargeBallState::Locked:
+		//Do nothing here
+		break;
+
+	case ELargeBallState::MovingAlongPath:
+		MoveAlongPath(DeltaTime);
+		break;
+
+	case ELargeBallState::WaitForUserInputs:
+		HandleJoystickInput(JoystickInputAxis);
+		break;
 	}
 }
 
-void ALargeBall::HandleJoystickInput()
+void ALargeBall::MoveAlongPath(float DeltaTime)
 {
-	if (FMath::Abs(JoystickInputAxis.X) > FMath::Abs(JoystickInputAxis.Y))
+	FVector CurrentPosition = GetActorLocation();
+	FVector Direction = (MoveToDestination - CurrentPosition);
+	Direction.Normalize();
+
+	FVector NewPosition = CurrentPosition + Direction * BallSpeed * DeltaTime;
+	SetActorLocation(NewPosition);
+
+	float AngularVelocity = BallSpeed / BallRadius;
+	FQuat RotationQuat = FQuat(Direction, AngularVelocity * DeltaTime);
+	BallMesh->AddLocalRotation(RotationQuat);
+
+	if (FVector::Distance(CurrentPosition, NewPosition) < MoveStopRange)
 	{
-		if (JoystickInputAxis.X > InputThreshold)
-		{
-			JoystickMoveRight();
-		}
-		else if (JoystickInputAxis.X < -InputThreshold)
-		{
-			JoystickMoveLeft();
-		}
-	}
-	else
-	{
-		if (JoystickInputAxis.Y > InputThreshold)
-		{
-			JoystickMoveUp();
-		}
-		else if (JoystickInputAxis.Y < -InputThreshold)
-		{
-			JoystickMoveDown();
-		}
+		CurrentState = ELargeBallState::WaitForUserInputs;
 	}
 }
 
-
-void ALargeBall::JoystickMoveDown_Implementation()
+void ALargeBall::HandleJoystickInput(FVector JoystickInput)
 {
+	int NextIndex = FindWaypointIndexFromDir(JoystickInput);
+	if (NextIndex < 0) return;
+
+	CurrentWaypointIndex = NextIndex;
+	MoveToDestination = Waypoints[CurrentWaypointIndex]->GetActorLocation();
+	CurrentState = ELargeBallState::Locked;
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle_MoveDelay, this, &ALargeBall::EnableMovement, MoveDelayTime,
+	                                       false);
 }
 
-void ALargeBall::JoystickMoveUp_Implementation()
+int ALargeBall::FindWaypointIndexFromDir(FVector JoystickInput)
 {
+	JoystickInput.Normalize();
+	if(Waypoints.IsEmpty())
+	{
+		UE_LOG(LogTemp, Error, TEXT("LargeBall - List Waypoint Empty"));
+		return -1;
+	}
+	AActor* CurrentWaypoint = Waypoints[CurrentWaypointIndex];
+
+	//Check if previous waypoint inside angle tolerance
+	int PreviousWaypointIndex = CurrentWaypointIndex - 1;
+	if (PreviousWaypointIndex < 0)
+	{
+		PreviousWaypointIndex = Waypoints.Num() - 1;
+	}
+
+	AActor* PreviousWaypoint = Waypoints[PreviousWaypointIndex];
+
+	FVector PreviousWaypointDir = PreviousWaypoint->GetActorLocation() - CurrentWaypoint->GetActorLocation();
+	PreviousWaypointDir.Normalize();
+
+	float PreviousDotProduct = FVector::DotProduct(PreviousWaypointDir, JoystickInput);
+	float PreviousRadAngle = FMath::Acos(PreviousDotProduct);
+	float PreviousDegAngle = FMath::RadiansToDegrees(PreviousRadAngle);
+
+	if (PreviousDegAngle < MoveAngleTolerance)
+	{
+		return PreviousWaypointIndex;
+	}
+
+	//Check if next waypoint inside angle tolerance
+	int NextWaytpointIndex = CurrentWaypointIndex + 1;
+	if (NextWaytpointIndex >= Waypoints.Num())
+	{
+		NextWaytpointIndex = 0;
+	}
+
+	AActor* NextWayPoint = Waypoints[NextWaytpointIndex];
+
+	FVector NextWaypointDir = NextWayPoint->GetActorLocation() - CurrentWaypoint->GetActorLocation();
+	NextWaypointDir.Normalize();
+
+	float NextDotProduct = FVector::DotProduct(NextWaypointDir, JoystickInputAxis);
+	float NextRadAngle = FMath::Acos(NextDotProduct);
+	float NextDegAngle = FMath::RadiansToDegrees(NextRadAngle);
+
+	if (NextDegAngle < MoveAngleTolerance)
+	{
+		return NextWaytpointIndex;
+	}
+
+	//No Waypoints found if not inside next or previous angle tolerance
+	return -1;
 }
 
-void ALargeBall::JoystickMoveRight_Implementation()
-{
-}
 
-void ALargeBall::JoystickMoveLeft_Implementation()
+void ALargeBall::EnableMovement()
 {
+	CurrentState = ELargeBallState::MovingAlongPath;
 }
-

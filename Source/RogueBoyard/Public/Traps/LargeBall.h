@@ -6,6 +6,14 @@
 #include "RogueTrap.h"
 #include "LargeBall.generated.h"
 
+UENUM()
+enum class ELargeBallState : uint8
+{
+	Locked = 0,
+	MovingAlongPath,
+	WaitForUserInputs,
+};
+
 UCLASS()
 class ROGUEBOYARD_API ALargeBall : public ARogueTrap
 {
@@ -20,46 +28,33 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trap|LargeBall")
+	float BallSpeed = 200.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trap|LargeBall")
+	TArray<AActor*> Waypoints;
+
+	UPROPERTY(EditAnywhere,Category = "Trap|LargeBall")
+	float MoveStopRange = 10.f;
+	
+	UPROPERTY(EditAnywhere, Category = "Trap|LargeBall", meta=(Units="degrees"))
+	float MoveAngleTolerance = 10.f;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* BallMesh;
+
 public:
-	// Called every frame
+
 	virtual void Tick(float DeltaTime) override;
-	
-	void HandleJoystickInput();
+	void MoveAlongPath(float DeltaTime);
+	void HandleJoystickInput(FVector JoystickInput);
+	int FindWaypointIndexFromDir(FVector JoystickInput);
+	void EnableMovement();
 
-	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
-	float TimeBetweenEachMove;
-
-	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
-	float MoveSpeed = 500.0f;
-
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
-	bool bArrived = true;
-	
-	UPROPERTY(EditAnywhere,Category="Trap|LargeBall")
-	float Tolerance = 5.0f;
-
-	UFUNCTION(BlueprintCallable)
-	void MoveTowardsTarget(float DeltaTime, FVector TargetLocation);
-
-	// Blueprint Native Events for Movement
-	UFUNCTION(BlueprintNativeEvent)
-	void JoystickMoveRight();
-
-	UFUNCTION(BlueprintNativeEvent)
-	void JoystickMoveLeft();
-
-	UFUNCTION(BlueprintNativeEvent)
-	void JoystickMoveUp();
-
-	UFUNCTION(BlueprintNativeEvent)
-	void JoystickMoveDown();
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Trap|LargeBall")
-	float InputThreshold = 0.5f;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Trap|LargeBall")
-	UStaticMeshComponent* Ball;
-
-	UPROPERTY(BlueprintReadWrite)
-	FVector TargetPos;
+	int8 CurrentWaypointIndex;
+	FTimerHandle TimerHandle_MoveDelay;
+	float MoveDelayTime;
+	float BallRadius;
+	ELargeBallState CurrentState = ELargeBallState::WaitForUserInputs;
+	FVector MoveToDestination = FVector::ZeroVector;
 };
