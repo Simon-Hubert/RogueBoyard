@@ -58,14 +58,14 @@ void ARogueRoom::PlacePlayers(TArray<ACharacter*> Players)
 {
 	for (int i=0; i<Players.Num(); i++)
 	{
-		Players[i]->SetActorLocation(SpawnPoints[i]->GetComponentLocation());
+		Players[i]->SetActorLocation(SpawnPoints[i]->GetComponentLocation(), false, nullptr, ETeleportType::ResetPhysics);
 	}
 }
 
 void ARogueRoom::PlacePlayer(ARogueCharacter* Player, const int Index)
 {
 	//TODO Guard Pour Index
-	Player->SetActorLocation(SpawnPoints[Index]->GetComponentLocation(), false, nullptr, ETeleportType::TeleportPhysics);
+	Player->SetActorLocation(SpawnPoints[Index]->GetComponentLocation(), false, nullptr, ETeleportType::ResetPhysics);
 }
 
 void ARogueRoom::BeginPlay()
