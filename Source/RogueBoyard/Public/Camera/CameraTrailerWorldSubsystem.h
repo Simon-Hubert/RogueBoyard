@@ -19,6 +19,7 @@ public:
 	void AddCamera(USceneCaptureComponent2D* Camera);
 	virtual void PostInitialize() override;
 	virtual void Tick(float DeltaTime) override;
+	void AsyncSavePng(TTuple<UTextureRenderTarget2D*, USceneCaptureComponent2D*> Elem, int frame);
 	virtual TStatId GetStatId() const override {return TStatId(); };
 private:
 	TArray<UTextureRenderTarget2D*> RenderTargets;

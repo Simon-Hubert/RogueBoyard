@@ -4,6 +4,8 @@
 #include "Camera/CameraTrailerWorldSubsystem.h"
 
 #include "ImageUtils.h"
+#include "CADKernel/UI/Visu.h"
+#include "CADKernel/UI/Visu.h"
 #include "Components/SceneCaptureComponent2D.h"
 
 #include  "Engine/TextureRenderTarget2D.h"
@@ -39,19 +41,28 @@ void UCameraTrailerWorldSubsystem::PostInitialize()
 void UCameraTrailerWorldSubsystem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	Frame++;
-	for (auto Element : RenderTargetTextureMap)
-	{
-		FString ThumbnailFile = "C:/Users/Enzo/Desktop/RogueBoyard/Trailer/" + Element.Value->GetOwner()->GetName() + "/" + FString::FromInt(Frame) + ".png";
-		FArchive* Ar = IFileManager::Get().CreateFileWriter(*ThumbnailFile);
-		FBufferArchive Buffer;
-		
-		bool bSuccess = FImageUtils::ExportRenderTarget2DAsPNG(Element.Key, Buffer);
-		if (bSuccess)
-		{
-			Ar->Serialize(const_cast<uint8*>(Buffer.GetData()), Buffer.Num());
-		}
+	//Frame++;
+	//for(auto Element : RenderTargetTextureMap) {
+	//	AsyncSavePng(Element, Frame);
+	//}
+}
 
-		delete Ar;
-	}
+void UCameraTrailerWorldSubsystem::AsyncSavePng(TTuple<UTextureRenderTarget2D*, USceneCaptureComponent2D*> Elem, int frame) {
+	AsyncTask(ENamedThreads::AnyThread, [Elem, frame]()
+	{
+		FString ThumbnailFile = "E:/Simon/UnrealProjects/RogueBoyard/Trailer/" + Elem.Value->GetOwner()->GetName() + "/" + FString::FromInt(frame) + ".png";
+        FBufferArchive Buffer;
+        bool bSuccess = FImageUtils::ExportRenderTarget2DAsPNG(Elem.Key, Buffer);
+
+		AsyncTask(ENamedThreads::GameThread, [bSuccess, Buffer, ThumbnailFile]()
+		{
+			FArchive* Ar = IFileManager::Get().CreateFileWriter(*ThumbnailFile);
+			if (bSuccess)
+            {
+                Ar->Serialize(const_cast<uint8*>(Buffer.GetData()), Buffer.Num());
+            }
+			delete Ar;
+		});
+		
+	});
 }
