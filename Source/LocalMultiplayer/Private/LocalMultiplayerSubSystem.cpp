@@ -24,7 +24,8 @@ void ULocalMultiplayerSubSystem::ResetAllPlayers()
 	PlayerIndexFromKeyboardProfileIndex.Empty();
 
 	LastAssignedPlayerIndex = -1;
-
+	const int Players2 = GEngine->GetNumGamePlayers(World);
+	UE_LOG(LogTemp, Display, TEXT("Players: %d"), Players2);
 	OnAllPlayersReset.Broadcast();
 }
 
