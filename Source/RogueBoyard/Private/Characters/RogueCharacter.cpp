@@ -72,6 +72,7 @@ void ARogueCharacter::TakeDamage(int Damage)
 
 void ARogueCharacter::Resurrect() {
 	if(StateMachine->CurrentStateID == ERogueCharacterStateID::Dead) {
+		CurrentLives = LivesMAX;
 		GetMesh()->SetVisibility(true);
 		StateMachine->ChangeState(ERogueCharacterStateID::Idle);
 		ReceiveResurrect();
@@ -109,6 +110,10 @@ void ARogueCharacter::SetCamera()
 	}
 }
 
+void ARogueCharacter::SetCameraByParam(ACameraActor* cam) {
+	Camera = cam;
+}
+
 void ARogueCharacter::UnPossessCharacter(ARogueRoomPawn* Room)
 {
 	APlayerController* PC = Cast<APlayerController>(GetController());
@@ -116,6 +121,7 @@ void ARogueCharacter::UnPossessCharacter(ARogueRoomPawn* Room)
 	{
 		PC->UnPossess();
 		PC->Possess(Room);
+		Room->Player = this;
 	}
 }
 

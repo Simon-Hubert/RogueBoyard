@@ -47,7 +47,8 @@ void ARogueTrap::Tick(float DeltaTime)
 }
 
 void ARogueTrap::Init() {
-		ReceiveInit();
+	bPlayedInit = true;
+	ReceiveInit();
 }
 
 void ARogueTrap::End() {
@@ -56,7 +57,7 @@ void ARogueTrap::End() {
 
 void ARogueTrap::RotateTrap(float DeltaTime)
 {
-	if (bCanRotate)
+	if (bCanRotate && bPlayedInit)
 	{
 		if(FMath::Abs(JoystickInputAxis.X) > ValueMinimalRotationJoystick)
 		{

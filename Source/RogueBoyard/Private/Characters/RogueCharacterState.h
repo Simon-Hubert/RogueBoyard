@@ -25,7 +25,7 @@ public:
 	virtual void StateEnter(ERogueCharacterStateID PreviousStateID);
 	virtual void StateExit(ERogueCharacterStateID NextStateID);
 	virtual void StateTick(float DeltaTime);
-
+	
 	UFUNCTION(BlueprintCallable)
 	virtual void Movement(float X, float Y);
 	UFUNCTION(BlueprintCallable)

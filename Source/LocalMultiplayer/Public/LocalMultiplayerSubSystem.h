@@ -16,14 +16,20 @@ class LOCALMULTIPLAYER_API ULocalMultiplayerSubSystem : public UGameInstanceSubs
 	GENERATED_BODY()
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnNewPlayerJoined, int, PlayerIndex);
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnAllPlayersJoined);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnAllPlayersReset);
 public:
 
 	UPROPERTY(BlueprintAssignable)
 	FOnNewPlayerJoined OnNewPlayerJoinedEvent;
 	UPROPERTY(BlueprintAssignable)
 	FOnAllPlayersJoined OnAllPlayersJoined;
+	UPROPERTY(BlueprintAssignable)
+	FOnAllPlayersReset OnAllPlayersReset;
 	UPROPERTY(BlueprintReadWrite)
 	bool bIsInMenuSelection = false;
+
+	UFUNCTION(BlueprintCallable)
+	void ResetAllPlayers();
 	UFUNCTION(BlueprintCallable)
 	void CreateAndInitPlayers(ELocalMultiplayerInputMappingType MappingType);
 

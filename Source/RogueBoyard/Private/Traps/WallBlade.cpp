@@ -33,22 +33,25 @@ void AWallBlade::Tick(float DeltaTime)
 
 void AWallBlade::MoveOnOneAxis(const float& DeltaTime)
 {
-	RightVector = GetActorRightVector();
-	Direction = RightVector * JoystickInputAxis.X; 
-	MovementDelta = Direction * MovementSpeed * DeltaTime;
-	NewLocation	= Blade->GetComponentLocation() + MovementDelta;
-	//NewLocation = GetActorLocation() + MovementDelta;
-	DistanceFromStart = FVector::Dist(StartPosition, NewLocation);
-	if (DistanceFromStart <= MaxDistance)
-	{
-		Blade->SetWorldLocation(NewLocation);
-		//SetActorLocation(NewLocation);
+	if(bPlayedInit) {
+		RightVector = GetActorRightVector();
+        Direction = RightVector * JoystickInputAxis.X; 
+        MovementDelta = Direction * MovementSpeed * DeltaTime;
+        NewLocation	= Blade->GetComponentLocation() + MovementDelta;
+        //NewLocation = GetActorLocation() + MovementDelta;
+        DistanceFromStart = FVector::Dist(StartPosition, NewLocation);
+        if (DistanceFromStart <= MaxDistance)
+        {
+        	Blade->SetWorldLocation(NewLocation);
+        	//SetActorLocation(NewLocation);
+        }
+        else
+        {
+        	ClampedLocation = StartPosition + RightVector * MaxDistance * FMath::Sign(JoystickInputAxis.X);
+        	Blade->SetWorldLocation(ClampedLocation);
+        	//SetActorLocation(ClampedLocation);
+        }
+        DistanceTravelled = FVector::Dist(StartPosition, Blade->GetComponentLocation());
 	}
-	else
-	{
-		ClampedLocation = StartPosition + RightVector * MaxDistance * FMath::Sign(JoystickInputAxis.X);
-		Blade->SetWorldLocation(ClampedLocation);
-		//SetActorLocation(ClampedLocation);
-	}
-	DistanceTravelled = FVector::Dist(StartPosition, Blade->GetComponentLocation());
+
 }

@@ -19,6 +19,7 @@ void URogueCharacterStateFall::StateEnter(ERogueCharacterStateID PreviousStateID
 	Character->PlayAnimMontage(FallMontage, true);
 	Character->GetMesh()->SetWorldRotation(FRotator(0, 0, -90));
 	GetWorld()->GetSubsystem<UCameraWorldSubsystem>()->RemoveFollowTarget(Character);
+	UE_LOG(LogTemp, Warning, TEXT("Enter Fall"));
 }
 
 void URogueCharacterStateFall::StateExit(ERogueCharacterStateID NextStateID)
@@ -26,5 +27,6 @@ void URogueCharacterStateFall::StateExit(ERogueCharacterStateID NextStateID)
 	Super::StateExit(NextStateID);
 	FRotator rotator = Character->GetMesh()->GetRelativeRotation();
 	Character->GetMesh()->SetWorldRotation(FRotator(0, 0, 0));
+	UE_LOG(LogTemp, Warning, TEXT("Exit Fall"));
 }
 

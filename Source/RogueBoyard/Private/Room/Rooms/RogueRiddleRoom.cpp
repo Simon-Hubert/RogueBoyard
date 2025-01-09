@@ -30,6 +30,7 @@ void ARogueRiddleRoom::Tick(float DeltaTime)
 
 	if(ThingsToValidate <= 0)
 	{
+		bHasRoomEnded = true;
 		bLizardsHasWon = true;
 		EndRoom();
 	}

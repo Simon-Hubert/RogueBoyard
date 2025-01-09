@@ -27,9 +27,11 @@ void ALightningTrap::Tick(float DeltaTime)
 
 void ALightningTrap::MoveOnXYDirection(float DeltaTime)
 {
-	RightVector = GetWorld()->GetFirstPlayerController()->PlayerCameraManager->GetActorRightVector();
-	ForwardVector = RightVector.RotateAngleAxis(-90, FVector(0, 0, 1));
-	Movement = JoystickInputAxis * Speed * DeltaTime;
-	NewLocation = GetActorLocation() + (RightVector * Movement.X) + (ForwardVector * Movement.Y);
-	SetActorLocation(NewLocation);
+	if(bPlayedInit) {
+			RightVector = GetWorld()->GetFirstPlayerController()->PlayerCameraManager->GetActorRightVector();
+        	ForwardVector = RightVector.RotateAngleAxis(-90, FVector(0, 0, 1));
+        	Movement = JoystickInputAxis * Speed * DeltaTime;
+        	NewLocation = GetActorLocation() + (RightVector * Movement.X) + (ForwardVector * Movement.Y);
+        	SetActorLocation(NewLocation);
+	}
 }

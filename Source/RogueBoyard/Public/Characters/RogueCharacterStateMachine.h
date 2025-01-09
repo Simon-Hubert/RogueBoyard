@@ -35,6 +35,9 @@ public:
 	
 	UPROPERTY(BlueprintReadOnly)
 	ERogueCharacterStateID CurrentStateID;
+
+	UPROPERTY(BlueprintReadOnly)
+	ERogueCharacterStateID PreviousStateID;
 	
 protected:
 	UPROPERTY()

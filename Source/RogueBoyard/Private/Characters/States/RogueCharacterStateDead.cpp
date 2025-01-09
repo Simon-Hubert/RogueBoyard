@@ -20,14 +20,16 @@ void URogueCharacterStateDead::StateEnter(ERogueCharacterStateID PreviousStateID
 	Character->PlayAnimMontage(DeadMontage);
 	if(ResurectMontage) ResurectAnimTimeRemaining = ResurectMontage->GetPlayLength();
 	Character->OnCharacterDeathEvent.Broadcast();
+	UE_LOG(LogTemp, Warning, TEXT("Enter Dead"));
 }
 
 void URogueCharacterStateDead::StateExit(ERogueCharacterStateID NextStateID)
 {
 	Super::StateExit(NextStateID);
 	Character->CurrentLives = Character->LivesMAX;
-	UE_LOG(LogTemp, Warning, TEXT("Character Resurected without permission"))
+	//UE_LOG(LogTemp, Warning, TEXT("Character Resurected without permission"))
 	bRespawned = false;
+	UE_LOG(LogTemp, Warning, TEXT("Exit Dead"));
 }
 
 void URogueCharacterStateDead::StateTick(float DeltaTime)

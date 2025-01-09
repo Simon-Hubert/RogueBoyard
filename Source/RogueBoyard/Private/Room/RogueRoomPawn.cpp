@@ -48,5 +48,6 @@ void ARogueRoomPawn::UnPossesRoom(ARogueCharacter* Character)
 	}
 	PC->UnPossess();
 	PC->Possess(Character);
+	Player = nullptr;
 }
 

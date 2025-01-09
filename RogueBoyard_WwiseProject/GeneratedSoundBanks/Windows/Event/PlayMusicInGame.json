@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{AF0D6817-1E1A-40C4-BBBC-DB92576D0548}",
     "Language": "SFX",
-    "Hash": "{BD19704F-8053-6C5C-696F-D67704857889}",
+    "Hash": "{EF4249F3-CCE7-B43F-CFA7-9B6628B521C0}",
     "ObjectPath": "PlayMusicInGame",
     "ShortName": "PlayMusicInGame",
     "Path": "Event/PlayMusicInGame.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{EF9B65B5-BF44-6D0B-F804-09FEF2974910}"
+  "FileHash": "{B0FB8F45-7E31-2993-6650-08DFC9BBB36E}"
  }
 }

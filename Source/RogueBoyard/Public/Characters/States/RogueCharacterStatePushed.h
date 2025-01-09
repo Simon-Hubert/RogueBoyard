@@ -25,6 +25,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UAkAudioEvent> VoiceEvent;
 
+
 private:
 	FHitResult HitResult;
 	float DelayTime = 0.f;

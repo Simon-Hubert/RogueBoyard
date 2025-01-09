@@ -87,11 +87,12 @@ protected:
 	float MaxRoomTime = 120.0f;
 
 	bool bBeginThePlay = true;
+	bool bHasRoomEnded = false;
 	
 private:
 
 	bool bHasRoomStarted = false;
-	bool bHasRoomEnded = false;
+
 	
 
 };

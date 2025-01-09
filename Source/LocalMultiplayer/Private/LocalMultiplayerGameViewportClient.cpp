@@ -103,14 +103,14 @@ bool ULocalMultiplayerGameViewportClient::InputAxis(FViewport* InViewPort, FInpu
 			//GEngine->AddOnScreenDebugMessage(1, 0.5f, FColor::Red, "Key not assigned");
 		} else if (Multiplayer->GetAssignedPlayerIndexFromKeyboardProfileIndex(KeyboardProfileIndex) < 0)
 		{
-			if(Multiplayer->bIsInMenuSelection)
-			{
-				PlayerIndex = Multiplayer->AssignNewPlayerToKeyboardProfile(KeyboardProfileIndex);
-				Multiplayer->AssignKeyboardMapping(
-					PlayerIndex,
-					KeyboardProfileIndex,
-					ELocalMultiplayerInputMappingType::InGame);
-			}
+		if(Multiplayer->bIsInMenuSelection)
+		{
+			PlayerIndex = Multiplayer->AssignNewPlayerToKeyboardProfile(KeyboardProfileIndex);
+			Multiplayer->AssignKeyboardMapping(
+				PlayerIndex,
+				KeyboardProfileIndex,
+				ELocalMultiplayerInputMappingType::InGame);
+		}
 
 		}
 		else

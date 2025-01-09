@@ -52,41 +52,44 @@ void ALargeBall::Tick(float DeltaTime)
 
 void ALargeBall::MoveAlongPath(float DeltaTime)
 {
-	FVector CurrentPosition = GetActorLocation();
-	FVector Direction = (MoveToDestination - CurrentPosition);
-	Direction.Normalize();
-
-	FVector NewPosition = CurrentPosition + Direction * BallSpeed * DeltaTime;
-	SetActorLocation(NewPosition);
-
-	if(!bDistanceCalculated)
+	if(bPlayedInit)
 	{
-		DistanceToTravel =  FVector::Distance(CurrentPosition, NewPosition);
-		bDistanceCalculated = true;
-	}
-	float RotationAngle = DistanceToTravel / (2 * PI * BallRadius);  // Angle en radians
+		FVector CurrentPosition = GetActorLocation();
+		FVector Direction = (MoveToDestination - CurrentPosition);
+		Direction.Normalize();
 
-	// Calculer l'axe de rotation perpendiculaire à la direction du mouvement
-	FVector RightAxis = FVector::CrossProduct(Direction, FVector(0, 0, 1));
-	RightAxis.Normalize();
+		FVector NewPosition = CurrentPosition + Direction * BallSpeed * DeltaTime;
+		SetActorLocation(NewPosition);
 
-	// Si le produit vectoriel donne un axe nul, la direction est parfaitement verticale,
-	if (RightAxis.IsNearlyZero())
-	{
-		RightAxis = FVector(1, 0, 0);
-	}
-	FRotator RotatorDirection(0,90 , 0);
-	FVector VectorRotatorDirection = RotatorDirection.RotateVector(Direction);
-	// Créer la rotation autour de l'axe perpendiculaire à la direction du mouvement
-	FQuat RotationQuat = FQuat(VectorRotatorDirection, RotationAngle);
-	FQuat NewRotationBall =RotationQuat *  GetActorQuat();
-	SetActorRotation(NewRotationBall);
+		if(!bDistanceCalculated)
+		{
+			DistanceToTravel =  FVector::Distance(CurrentPosition, NewPosition);
+			bDistanceCalculated = true;
+		}
+		float RotationAngle = DistanceToTravel / (2 * PI * BallRadius);  // Angle en radians
+
+		// Calculer l'axe de rotation perpendiculaire à la direction du mouvement
+		FVector RightAxis = FVector::CrossProduct(Direction, FVector(0, 0, 1));
+		RightAxis.Normalize();
+
+		// Si le produit vectoriel donne un axe nul, la direction est parfaitement verticale,
+		if (RightAxis.IsNearlyZero())
+		{
+			RightAxis = FVector(1, 0, 0);
+		}
+		FRotator RotatorDirection(0,90 , 0);
+		FVector VectorRotatorDirection = RotatorDirection.RotateVector(Direction);
+		// Créer la rotation autour de l'axe perpendiculaire à la direction du mouvement
+		FQuat RotationQuat = FQuat(VectorRotatorDirection, RotationAngle);
+		FQuat NewRotationBall =RotationQuat *  GetActorQuat();
+		SetActorRotation(NewRotationBall);
 	
 
-	if (FVector::Distance(CurrentPosition, MoveToDestination) < MoveStopRange)
-	{
-		bDistanceCalculated = false;
-		CurrentState = ELargeBallState::WaitForUserInputs;
+		if (FVector::Distance(CurrentPosition, MoveToDestination) < MoveStopRange)
+		{
+			bDistanceCalculated = false;
+			CurrentState = ELargeBallState::WaitForUserInputs;
+		}
 	}
 }
 

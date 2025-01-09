@@ -10,6 +10,8 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnNextRoom);
 DECLARE_MULTICAST_DELEGATE(FOnRoomFinishedLoading);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnWasLastRoom);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomLoaded);
+
 
 UENUM()
 enum ERoomLoaded
@@ -35,14 +37,26 @@ public:
 
 	void LoadNextRoom();
 	void RoomLoadedCallback(ERoomLoaded Context);
+
+	UPROPERTY(BlueprintReadWrite)
+	bool bIsLoading = false;
+	
 	FOnRoomFinishedLoading OnRoomFinishedLoadingEvent;
+	UPROPERTY(BlueprintAssignable)
+	FOnRoomLoaded OnRoomLoadedEvent;
 
 	UPROPERTY(BlueprintAssignable)
 	FOnWasLastRoom OnWasLastRoomEvent;
 
 	UPROPERTY(BlueprintAssignable)
 	FOnNextRoom OnNextRoomEvent;
+	
+	UFUNCTION(BlueprintCallable)
+	void UnloadPreviousRoom();
 
+	UFUNCTION(BlueprintCallable)
+	void UnloadAllRooms();
+	
 private:
 	bool bPendingNextRoom = false;
 	bool bIsNextRoomPawnLoaded = false;
@@ -57,5 +71,6 @@ private:
 	
 	void LoadRoomAtPosition(const TSoftObjectPtr<UWorld>& Room, const FVector& Position);
 	void UnloadRoom(ULevelStreamingDynamic* Room);
-	void UnloadPreviousRoom();
+	
+	
 };

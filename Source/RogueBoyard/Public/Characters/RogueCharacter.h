@@ -93,6 +93,9 @@ public:
 	ACameraActor* GetCamera();
 	UFUNCTION(BlueprintCallable)
 	void SetCamera();
+
+	UFUNCTION(BlueprintCallable)
+	void SetCameraByParam(ACameraActor* cam);
 private:
 	UPROPERTY()
 	ACameraActor* Camera;
@@ -108,6 +111,9 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "OnPushedWhenPushing")
 	void CancelPushing_Implementation(ERogueCharacterStateID StateID);
+
+	UFUNCTION(BlueprintImplementableEvent, Category= "Pushed")
+	void OnPushed();
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void TriggerFinishPushed();

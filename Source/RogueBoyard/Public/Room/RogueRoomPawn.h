@@ -54,6 +54,9 @@ public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	TArray<ARogueTrap*> RightTrigger;
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	ARogueCharacter* Player;
+
 	UFUNCTION(BlueprintCallable)
 	void UnPossesRoom(ARogueCharacter* RogueCharacter);
 	

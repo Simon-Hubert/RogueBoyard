@@ -64,7 +64,9 @@ void ARogueGameMode::InitStatSubsystem() {
 
 void ARogueGameMode::GiveRoomRewards(TArray<ARogueCharacter*> Winners) {
 	for(ARogueCharacter* Character : Winners) {
-		Character->Purse->Earn(ActiveRoom->RoomRewards);
+		if(Character) {
+			Character->Purse->Earn(ActiveRoom->RoomRewards);
+		}
 	}
 }
 

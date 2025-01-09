@@ -21,6 +21,7 @@ public:
 protected:
 	
 	virtual void BeginPlay() override;
+	bool bPlayedInit = false;
 
 #pragma region CoolDown
 	UFUNCTION(BlueprintCallable)
