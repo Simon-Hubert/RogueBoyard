@@ -49,6 +49,7 @@ void URogueRoomSubsystem::InitFirstRoom() {
 
 
 void URogueRoomSubsystem::LoadRoomAtPosition(const TSoftObjectPtr<UWorld>& Room, const FVector& Position) {
+	bIsLoading = true;
 	LastLoadedRoomId++;
 	bool bSuccess;
 	const FString RoomName = "Room " + FString::SanitizeFloat(LastLoadedRoomId);
@@ -62,7 +63,7 @@ void URogueRoomSubsystem::LoadRoomAtPosition(const TSoftObjectPtr<UWorld>& Room,
 		RoomName);
 
 	if(!bSuccess || !NewRoom) {
-		GEngine->AddOnScreenDebugMessage(1,1.0f,FColor::Red, "Failed to load" + RoomName);
+		GEngine->AddOnScreenDebugMessage(1,3.0f,FColor::Red, "Failed to load" + RoomName);
 		return;
 	}
 	
@@ -113,7 +114,10 @@ void URogueRoomSubsystem::RoomLoadedCallback(ERoomLoaded Context)
 		bIsNextRoomPawnLoaded = false;
 		bIsNextRoomManagerLoaded = false;
 		OnRoomFinishedLoadingEvent.Broadcast();
+		OnRoomLoadedEvent.Broadcast();
+		GEngine->AddOnScreenDebugMessage(1,3.0f,FColor::Red, "CallBack DONE:");
 	}
+	GEngine->AddOnScreenDebugMessage(1,3.0f,FColor::Red, "CallBack LOADED:");
 }
 
 void URogueRoomSubsystem::UnloadPreviousRoom() {
