@@ -17,6 +17,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void AddCamera(USceneCaptureComponent2D* Camera);
+	UFUNCTION(BlueprintCallable)
+	void Save();
 	virtual void PostInitialize() override;
 	virtual void Tick(float DeltaTime) override;
 	void AsyncSavePng(TTuple<UTextureRenderTarget2D*, USceneCaptureComponent2D*> Elem, int frame);
@@ -25,5 +27,7 @@ private:
 	TArray<UTextureRenderTarget2D*> RenderTargets;
 	TMap<UTextureRenderTarget2D*, USceneCaptureComponent2D*> RenderTargetTextureMap;
 
+	bool bIsSaving = false;
 	int Frame = 0;
+	TArray<FImage> AccumulatedImages;
 };
