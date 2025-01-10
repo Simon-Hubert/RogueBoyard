@@ -5,7 +5,8 @@
 
 #include "Camera/CameraActor.h"
 #include "Characters/RogueCharacterStateMachine.h"
-#include "GameFramework/CharacterMovementComponent.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "Items/Ballon.h"
 #include "RogueBoyard/Public/Characters/RogueCharacter.h"
 
@@ -28,18 +29,26 @@ void URogueCharacterStateDash::StateEnter(ERogueCharacterStateID PreviousStateID
 	Character->LaunchCharacter(Dir * ForceImpulse, true, false);
 	DirPushBall = Dir * ForcePushBall;
 	if(Capsule != nullptr) Capsule->OnComponentBeginOverlap.AddDynamic(this, &URogueCharacterStateDash::OverlapBegin);
-	//Character->GetMesh()->PlayAnimation(DashMontage, false);
+	DashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
+		DashFX,
+		Character->GetMesh(),
+		"",
+		FVector::ZeroVector,
+		FRotator::ZeroRotator,
+		EAttachLocation::KeepRelativeOffset,
+		true);
+	DashComponent->SetVariableLinearColor(FName("LizzzardColor"), DashColor);
 }
 
 void URogueCharacterStateDash::StateExit(ERogueCharacterStateID NextStateID)
 {
 	Super::StateExit(NextStateID);
 	GEngine->AddOnScreenDebugMessage(
-	-1,
-	2.f,
-	FColor::Red,
-	TEXT("Exit dash")
-);
+		-1,
+		2.f,
+		FColor::Red,
+		TEXT("Exit dash")
+	);
 }
 
 void URogueCharacterStateDash::StateTick(float DeltaTime)

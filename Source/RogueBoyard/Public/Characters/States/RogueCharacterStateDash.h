@@ -8,17 +8,28 @@
 #include "RogueCharacterStateDash.generated.h"
 
 
+class UNiagaraSystem;
+class UNiagaraComponent;
+
 UCLASS(ClassGroup=(RogueCharacterState), meta=(BlueprintSpawnableComponent))
 class ROGUEBOYARD_API URogueCharacterStateDash : public URogueCharacterState
 {
 	GENERATED_BODY()
 
 public:
-
 	virtual ERogueCharacterStateID GetStateID() override;
 	virtual void StateEnter(ERogueCharacterStateID PreviousStateID) override;
 	virtual void StateExit(ERogueCharacterStateID NextStateID) override;
 	virtual void StateTick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UNiagaraSystem* DashFX;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FLinearColor DashColor;
+
+	UPROPERTY()
+	UNiagaraComponent* DashComponent;
 	
 	UPROPERTY(EditAnywhere)
 	float ForceImpulse;

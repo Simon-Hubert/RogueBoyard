@@ -14,7 +14,7 @@
 
 void UCameraTrailerWorldSubsystem::AddCamera(USceneCaptureComponent2D* Camera)
 {
-	if(RenderTargetTextureMap.FindKey(Camera)) return;
+	/*if(RenderTargetTextureMap.FindKey(Camera)) return;
 	
 	for (UTextureRenderTarget2D* Element : RenderTargets)
 	{
@@ -24,18 +24,18 @@ void UCameraTrailerWorldSubsystem::AddCamera(USceneCaptureComponent2D* Camera)
 			Camera->TextureTarget = Element;
 			break;
 		}
-	}
+	}*/
 }
 
 void UCameraTrailerWorldSubsystem::PostInitialize()
 {
-	Super::PostInitialize();
+	/*Super::PostInitialize();
 	const UTrailerRenderingSettings* Settings = GetDefault<UTrailerRenderingSettings>();
 	for (int i = 0; i < Settings->RenderTargets.Num(); i++)
 	{
 		UTextureRenderTarget2D* RenderTarget = Settings->RenderTargets[i].LoadSynchronous();
 		RenderTargets.Add(RenderTarget);
-	}
+	}*/
 }
 
 void UCameraTrailerWorldSubsystem::Tick(float DeltaTime)
@@ -48,7 +48,7 @@ void UCameraTrailerWorldSubsystem::Tick(float DeltaTime)
 }
 
 void UCameraTrailerWorldSubsystem::AsyncSavePng(TTuple<UTextureRenderTarget2D*, USceneCaptureComponent2D*> Elem, int frame) {
-	AsyncTask(ENamedThreads::AnyThread, [Elem, frame]()
+	/*AsyncTask(ENamedThreads::AnyThread, [Elem, frame]()
 	{
 		FString ThumbnailFile = "E:/Simon/UnrealProjects/RogueBoyard/Trailer/" + Elem.Value->GetOwner()->GetName() + "/" + FString::FromInt(frame) + ".png";
         FBufferArchive Buffer;
@@ -64,5 +64,5 @@ void UCameraTrailerWorldSubsystem::AsyncSavePng(TTuple<UTextureRenderTarget2D*, 
 			delete Ar;
 		});
 		
-	});
+	});*/
 }
